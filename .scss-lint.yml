@@ -1,0 +1,30 @@
+scss_files: '_scss/**/*.scss'
+
+linters:
+  ElsePlacement:
+    enabled: true
+    style: new_line
+
+  HexLength:
+    enabled: true
+    style: long
+
+  HexNotation:
+    style: lowercase
+
+  Indentation:
+    severity: warning
+    width: 4
+
+  LeadingZero:
+    style: include_zero
+
+  NameFormat:
+    enabled: false
+
+  SelectorDepth:
+    enabled: true
+    max_depth: 4
+
+  SingleLinePerSelector:
+    allow_single_line_rule_sets: true

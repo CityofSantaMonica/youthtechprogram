@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        {% comment %}
+            Our header is handled be the layouts that extend this layout
+        {% endcomment %}
+
+        {{ content }}
+
+        {% include footer.html %}
+    </body>
+</html>

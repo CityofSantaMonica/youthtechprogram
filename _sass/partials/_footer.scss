@@ -1,0 +1,18 @@
+.site-footer {
+    background-color: $color-alt-bg;
+    border-top: 3px solid $ytp-primary;
+    padding: {
+        bottom: $spacing-vertical-small;
+        top: $spacing-vertical-small;
+    }
+
+    .pages {
+        ul li {
+            margin-right: 10px;
+        }
+    }
+
+    .social {
+        text-align: right;
+    }
+}

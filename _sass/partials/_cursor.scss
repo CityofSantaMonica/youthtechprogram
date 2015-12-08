@@ -1,0 +1,43 @@
+$color-black: #000;
+$color-malachite: #38ef4e;
+
+.cursor {
+  animation: 1s blink step-end infinite;
+  color: $color-black;
+  font-size: 24px;
+  font-weight: 100;
+  margin-left: 2px;
+
+  &.bar {
+    &:after {
+      content: '|';
+    }
+  }
+
+  &.block {
+    &:after {
+      background-color: $color-malachite;
+      content: ' ';
+      display: inline-block;
+      height: 18px;
+      width: 10px;
+    }
+  }
+
+  &.underscore {
+    &:after {
+      content: '_';
+    }
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}

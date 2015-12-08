@@ -1,0 +1,23 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="row">
+            <section class="pages col-sm-10">
+                <ul class="horizontal">
+                    {% include partials/pages.html %}
+                </ul>
+            </section>
+
+            <section class="social col-sm-2">
+                <ul class="horizontal">
+                    {% for sm in site.social %}
+                        <li>
+                            <a href="{{ sm.url }}" title="{{ sm.title }}">
+                                <span class="icon {{ sm.icon }}"></span>
+                            </a>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </section>
+        </div>
+    </div>
+</footer>

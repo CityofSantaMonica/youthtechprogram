@@ -1,0 +1,41 @@
+# Site settings
+title: Santa Monica Youth Tech Program
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://santamonicayouthtech.com" # the base hostname & protocol for your site
+
+# Social settings
+social:
+    - title: Like us on Facebook!
+      icon: icon-facebook-official
+      url:  https://www.facebook.com/santamonicayouthtechprogram
+    - title: Follow us on twitter
+      icon: icon-twitter
+      url: https://twitter.com/SMYouthTech
+
+# Resources
+resources:
+  css:
+    - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
+    - /assets/css/main.css
+  js:
+    - https://use.fonticons.com/04cbad09.js
+    - https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
+    - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
+    - https://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js
+
+# Build settings
+markdown: redcarpet
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-sitemap
+
+include:
+  - _pages
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - Gulpfile.js
+  - node_modules
+  - package.json

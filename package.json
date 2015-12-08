@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "connect-livereload": "^0.5.4",
+    "express": "^4.13.3",
+    "gulp": "^3.9.0",
+    "path": "^0.12.7",
+    "tiny-lr": "^0.2.1"
+  }
+}
