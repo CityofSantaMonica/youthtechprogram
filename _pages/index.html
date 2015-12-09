@@ -11,6 +11,8 @@ jumbotron:
     position: top center
 ---
 
-<main class="contaier">
-
+<main class="container">
+    {% for alum in site.alum_stories %}
+        {{ alum.output }}
+    {% endfor %}
 </main>

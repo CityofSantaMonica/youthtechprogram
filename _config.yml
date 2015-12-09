@@ -23,6 +23,17 @@ resources:
     - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
     - https://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js
 
+# Collections
+collections:
+  - alum_stories
+
+defaults:
+  - scope:
+      path: ""
+      type: alum_stories
+    values:
+      layout: brag-card
+
 # Build settings
 markdown: redcarpet
 
