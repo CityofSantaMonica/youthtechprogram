@@ -1,0 +1,22 @@
+sections:
+    - name: Section 1
+      questions:
+        - q: Am a sample question here?
+          a: >
+            Hello world, I'm a multiple line
+
+            response
+        - q: Placeholder
+          a: foo bar
+    - name: Another Section
+      questions:
+        - q: "Question #2"
+          a: >
+            A sample response
+        - q: Am a sample question here?
+          a: >
+            Hello world, I'm a multiple line
+
+            response
+        - q: Placeholder
+          a: foo bar

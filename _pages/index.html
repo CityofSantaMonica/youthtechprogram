@@ -12,7 +12,15 @@ jumbotron:
 ---
 
 <main class="container">
-    {% for alum in site.alum_stories %}
-        {{ alum.output }}
-    {% endfor %}
+    <class class="row">
+        {% include partials/faq-renderer.html faq=site.data.faq.sections %}
+    </class>
+
+    <div class="row">
+        {% for alum in site.alum_stories %}
+            <div class="col-md-6">
+                {{ alum.output }}
+            </div>
+        {% endfor %}
+    </div>
 </main>

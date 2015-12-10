@@ -1,4 +1,5 @@
 var gulp = require('gulp');
+var gutil = require('gulp-util');
 var spawn = require('child_process').spawn;
 var tinylr = require('tiny-lr')();
 var jekyllPid;
@@ -14,7 +15,10 @@ function notifyLiveReload(event) {
 }
 
 gulp.task('jekyll-build', function() {
-    if (jekyllPid) { jekyllPid.kill(); }
+    if (jekyllPid) {
+        gutil.log(gutil.colors.yellow("_config.yml has changed; restarting Jekyll"));
+        jekyllPid.kill();
+    }
 
     jekyllPid = spawn("bundle", ['exec', 'jekyll', 'build', '--watch'], {stdio: 'inherit'});
 });

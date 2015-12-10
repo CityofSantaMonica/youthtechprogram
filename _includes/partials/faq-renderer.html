@@ -1,0 +1,29 @@
+{% for section in include.faq %}
+    {% assign accordionNumber = forloop.index %}
+    {% capture accordionTitle %}accordion-{{ accordionNumber }}-{{ section.name | slugify | replace: "-", "" | truncate: 10, "" }}{% endcapture %}
+
+    <h2>{{ section.name }}</h2>
+
+    <div class="panel-group" id="{{ accordionTitle }}" role="tablist" aria-multiselectable="true">
+        {% for question in section.questions %}
+            {% assign questionNumber = forloop.index %}
+            {% capture questionID %}question-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
+            {% capture answerID %}answer-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
+
+            <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="{{ questionID }}">
+                    <h4 class="panel-title">
+                        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#{{ accordionTitle }}" href="#{{ answerID }}" aria-expanded="false" aria-controls="{{ answerID }}">
+                            {{ question.q }}
+                        </a>
+                    </h4>
+                </div>
+                <div id="{{ answerID }}" class="panel-collapse collapse" role="tabpanel" aria-labelledby="{{ questionID }}">
+                    <div class="panel-body">
+                        {{ question.a | markdownify }}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endfor %}
