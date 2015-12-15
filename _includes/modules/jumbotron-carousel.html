@@ -1,0 +1,122 @@
+{% comment %}
+This file is intended to be a reusable method of creating jumbotron carousels created entirely from YAML.
+A sample YAML structure is shown below and this is the expected format.
+
+jumbotron:
+  # Include the contents of the specified file in the carousel as positioned absolutely meaning this content
+  # will not slide with the slides
+  include: header.html
+
+  # This field will be parsed as markdown and will be positioned absolutely meaning the content won't slide
+  text: >
+    ## Youth Tech Program
+
+    Summer 2016
+
+  # If a button belongs in the statically positioned container, define it here
+  button:
+    text: Apply
+    url: #
+
+  # This is an array of background images and slides that will be rotated
+  items:
+      # Information that will go in the caption of a slide
+      - title: Youth Tech Program 1
+        slug: Summer 2016
+        button:
+          text: Apply
+          url: #
+        image: assets/images/banners/home_1.jpg
+        position:
+          - viewsize: 0
+            location: center
+      # Position is an array that will hold values for `background-position` for the specified image at the
+      # specified breakpoint. The breakpoints used `min-width`.
+      - image: assets/images/banners/home_2.jpg
+        position:
+          - viewsize: 0
+            location: top center
+          - viewsize: 992px
+            location: center -70px
+          - viewsize: 1600px
+            location: center -200px
+{% endcomment %}
+
+<style>
+    {% for slide in include.jumbotron.items %}
+        {% capture slideName %}slide-{{ forloop.index0 }}{% endcapture %}
+
+        .item.{{ slideName }} {
+            background-image: url('{{ slide.image }}');
+        }
+
+        {% for size in slide.position %}
+            {% if size.viewsize == 0 %}
+                .item.{{ slideName }} {
+                    background-position: {{ size.location }};
+                }
+            {% else %}
+                @media only screen and (min-width: {{ size.viewsize }}) {
+                    .item.{{ slideName }} {
+                        background-position: {{ size.location }};
+                    }
+                }
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+</style>
+
+<div id="header-carousel" class="carousel slide" data-ride="carousel">
+    {% if include.jumbotron.items.size > 1 %}
+        <ol class="carousel-indicators">
+            {% for slide in include.jumbotron.items %}
+                <li data-target="#header-carousel"
+                    data-slide-to="{{ forloop.index0 }}"
+                    class="{% if !forloop.first %}active{% endif %}"
+                ></li>
+            {% endfor %}
+        </ol>
+    {% endif %}
+
+    <div class="carousel-inner" role="listbox">
+        <div class="carousel-caption">
+            {% if include.jumbotron.include %}
+                {% include {{ include.jumbotron.include }} %}
+            {% elsif include.jumbotron.text %}
+                {{ include.jumbotron.text | markdownify }}
+            {% endif %}
+
+            {% if include.jumbotron.button %}
+                <p>
+                    <a class="btn btn-primary" href="{{ include.jumbotron.button.url }}" role="button">
+                        {{ include.jumbotron.button.text }}
+                    </a>
+                </p>
+            {% endif %}
+        </div>
+
+        {% for slide in include.jumbotron.items %}
+            <div class="item slide-{{ forloop.index0 }} {% if !forloop.first %}active{% endif %}">
+                {% if slide.title or slide.slug or slide.button %}
+                    <div class="carousel-caption">
+                        {% if slide.title %}
+                            <h1>{{ slide.title }}</h1>
+                        {% endif %}
+
+                        {% if slide.slug %}
+                            <p>{{ slide.slug }}</p>
+                        {% endif %}
+
+                        {% if slide.button %}
+                            <p>
+                                <a class="btn btn-primary" href="{{ slide.button.url }}" role="button">
+                                    {{ slide.button.text }}
+                                </a>
+                            </p>
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

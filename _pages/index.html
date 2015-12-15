@@ -2,13 +2,27 @@
 layout: jumbotron-header
 permalink: /
 jumbotron:
-  - title: Youth Tech Program
-    slug: Summer 2016
-    button:
-      text: Apply
-      url: #
-    image: http://lorempixel.com/1280/850/technics
-    position: top center
+  include:
+  text: >
+    ## Youth Tech Program
+
+    Summer 2016
+  button:
+    text: Apply
+    url: #
+  items:
+      - image: assets/images/banners/home_1.jpg
+        position:
+          - viewsize: 0
+            location: top center
+          - viewsize: 992px
+            location: center -70px
+          - viewsize: 1600px
+            location: center -200px
+      - image: assets/images/banners/home_2.jpg
+        position:
+          - viewsize: 0
+            location: center
 ---
 
 <main class="container">

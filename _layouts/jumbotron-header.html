@@ -2,54 +2,9 @@
 layout: base
 ---
 
-<style>
-    {% for slide in page.jumbotron %}
-        .item.{{ slide.title | slugify }} {
-            background-image: url('{{ slide.image }}');
-            background-position: {{ slide.position }};
-        }
-    {% endfor %}
-</style>
-
 <header class="header-carousel">
     {% include navigation.html %}
-
-    <div id="header-carousel" class="carousel slide" data-ride="carousel">
-        {% if page.jumbotron.size > 1 %}
-            <ol class="carousel-indicators">
-                {% for slide in page.jumbotron %}
-                    <li data-target="#header-carousel"
-                        data-slide-to="{{ forloop.index0 }}"
-                        class="{% if !forloop.first %}active{% endif %}"
-                    ></li>
-                {% endfor %}
-            </ol>
-        {% endif %}
-
-        <div class="carousel-inner" role="listbox">
-            {% for slide in page.jumbotron %}
-                <div class="item {{ slide.title | slugify }} {% if !forloop.first %}active{% endif %}">
-                    <div class="carousel-caption">
-                        {% if slide.title %}
-                            <h1>{{ slide.title }}</h1>
-                        {% endif %}
-
-                        {% if slide.slug %}
-                            <p>{{ slide.slug }}</p>
-                        {% endif %}
-
-                        {% if slide.button %}
-                            <p>
-                                <a class="btn btn-primary" href="{{ slide.button.url }}" role="button">
-                                    {{ slide.button.text }}
-                                </a>
-                            </p>
-                        {% endif %}
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+    {% include modules/jumbotron-carousel.html jumbotron=page.jumbotron %}
 </header>
 
 {{ content }}
