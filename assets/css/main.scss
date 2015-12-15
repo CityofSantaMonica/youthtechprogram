@@ -3,13 +3,14 @@
 @charset "utf-8";
 
 @import 'base';
-
-@import 'partials/cursor';
+@import 'bootstrap/breakpoints';
+@import 'bootstrap/panel-heading';
 
 @import 'generic/lists';
-@import 'bootstrap/panel-heading';
 
 @import 'partials/brag-card';
 @import 'partials/carousel-header';
 @import 'partials/navigation';
 @import 'partials/footer';
+
+@import 'partials/cursor';
