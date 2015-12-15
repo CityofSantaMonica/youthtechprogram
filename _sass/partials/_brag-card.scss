@@ -1,7 +1,13 @@
 .brag-card {
     .picture {
-        float: left;
-        padding-right: 15px;
+        margin-bottom: 15px;
+        text-align: center;
+
+        @include respond-to(sm) {
+            float: left;
+            margin-bottom: 0;
+            padding-right: 15px;
+        }
 
         img {
             border-radius: 50%;
@@ -10,6 +16,15 @@
 
     .description {
         overflow: hidden;
+
+        .name,
+        .year {
+            text-align: center;
+
+            @include respond-to(sm) {
+                text-align: left;
+            }
+        }
 
         .name {
             font-size: 20px;
