@@ -18,6 +18,9 @@ jumbotron:
     text: Apply
     url: #
 
+  # Set to true to disable the rendering of indicators to go to a specific slide
+  disableIndicators: false
+
   # This is an array of background images and slides that will be rotated
   items:
       # Information that will go in the caption of a slide
@@ -67,16 +70,18 @@ jumbotron:
 </style>
 
 <div id="header-carousel" class="carousel slide" data-ride="carousel">
-    {% if include.jumbotron.items.size > 1 %}
-        <ol class="carousel-indicators">
-            {% for slide in include.jumbotron.items %}
-                <li data-target="#header-carousel"
-                    data-slide-to="{{ forloop.index0 }}"
-                    class="{% if !forloop.first %}active{% endif %}"
-                ></li>
-            {% endfor %}
-        </ol>
-    {% endif %}
+    {% unless include.jumbotron.disableIndicators %}
+        {% if include.jumbotron.items.size > 1 %}
+            <ol class="carousel-indicators">
+                {% for slide in include.jumbotron.items %}
+                    <li data-target="#header-carousel"
+                        data-slide-to="{{ forloop.index0 }}"
+                        class="{% if !forloop.first %}active{% endif %}"
+                    ></li>
+                {% endfor %}
+            </ol>
+        {% endif %}
+    {% endunless %}
 
     <div class="carousel-inner" role="listbox">
         <div class="carousel-caption">
