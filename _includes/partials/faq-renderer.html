@@ -11,7 +11,7 @@
             {% capture answerID %}answer-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
 
             <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="{{ questionID }}">
+                <div class="panel-heading clickable" role="tab" id="{{ questionID }}">
                     <h4 class="panel-title">
                         <a class="collapsed" role="button" data-toggle="collapse" data-parent="#{{ accordionTitle }}" href="#{{ answerID }}" aria-expanded="false" aria-controls="{{ answerID }}">
                             {{ question.q }}
