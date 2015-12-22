@@ -1,0 +1,24 @@
+// .faq-section {
+//     .panel,
+//     .panel-heading {
+//         border-color: #efefef;
+//         border-radius: 0;
+//         box-shadow: none;
+//     }
+// }
+
+.panel-group {
+    .panel-faq {
+        box-shadow: none;
+
+        &,
+        .panel-heading {
+            border-color: lighten(#71AA97, 0.5);
+            border-radius: 0;
+        }
+
+        .panel-heading {
+            background-color: #71AA97;
+        }
+    }
+}

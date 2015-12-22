@@ -2,11 +2,10 @@
 layout: jumbotron-header
 permalink: /
 jumbotron:
-  include:
   text: >
-    ## Youth Tech Program
+    # Youth Tech Program
 
-    Summer 2016
+    #### Summer 2016
   button:
     text: Apply
     url: #
@@ -27,7 +26,7 @@ jumbotron:
 
 <main class="container">
     <class class="row">
-        {% include partials/faq-renderer.html faq=site.data.faq.sections %}
+        {% include modules/faq-renderer.html faq=site.data.faq.sections %}
     </class>
 
     <div class="row">
