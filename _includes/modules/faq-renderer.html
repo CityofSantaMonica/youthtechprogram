@@ -1,14 +1,14 @@
 {% for section in include.faq %}
     {% assign accordionNumber = forloop.index %}
-    {% capture accordionTitle %}accordion-{{ accordionNumber }}-{{ section.name | slugify | replace: "-", "" | truncate: 10, "" }}{% endcapture %}
+    {% capture accordionTitle %}accordion-{{ accordionNumber }}{% endcapture %}
 
     <h2>{{ section.name }}</h2>
 
     <div class="panel-group" id="{{ accordionTitle }}" role="tablist" aria-multiselectable="true">
         {% for question in section.questions %}
             {% assign questionNumber = forloop.index %}
-            {% capture questionID %}question-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
-            {% capture answerID %}answer-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
+            {% capture questionID %}accordion-q-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
+            {% capture answerID %}accordion-a-{{ accordionNumber }}-{{ questionNumber }}{% endcapture %}
 
             <div class="panel panel-faq">
                 <div class="panel-heading clickable" role="tab" id="{{ questionID }}">

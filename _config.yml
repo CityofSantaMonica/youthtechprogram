@@ -15,23 +15,25 @@ social:
 # Resources
 resources:
   css:
-    - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css
+    - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css
     - /assets/css/main.css
   js:
     - https://use.fonticons.com/04cbad09.js
-    - https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js
-    - https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js
-    - https://cdn.jsdelivr.net/prefixfree/1.0.7/prefixfree.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js
+    - /assets/js/main.js
 
 # Collections
 collections:
-  - alum_stories
+  - alum_quotes
 
 defaults:
   - scope:
       path: ""
-      type: alum_stories
+      type: alum_quotes
     values:
       layout: brag-card
 

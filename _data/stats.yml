@@ -1,0 +1,26 @@
+- name: "race"
+  type: "pie"
+  title: "Sample Title of Slide"
+  content: >
+    lorum ipsum, some sort of description
+  data:
+    - label: "Asian"
+      value: 10
+      color: "#F7464A"
+    - label: "Hispanic/Latino"
+      value: 10
+      color: "#46BFBD"
+    - label: "Caucasian"
+      value: 10
+      color: "#FDB45C"
+
+- name: "gender"
+  type: "pie"
+  title: "Simply another slide"
+  data:
+    - label: "Male"
+      value: 60
+      color: "#F7464A"
+    - label: "Female"
+      value: 40
+      color: "#46BFBD"

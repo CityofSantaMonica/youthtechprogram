@@ -1,0 +1,16 @@
+{% raw %}
+    <script id="quote-card-template" type="text/x-handlebars-template">
+        <article class="brag-card clearfix">
+            <div class="picture">
+                <img src="{{ image }}" alt="{{ name }}'s picture'" />
+            </div>
+            <div class="description">
+                <p class="name">{{ name }}</p>
+                <p class="year">Alumn from {{ year }}</p>
+                <section class="bio">
+                    {{ content }}
+                </section>
+            </div>
+        </article>
+    </script>
+{% endraw %}

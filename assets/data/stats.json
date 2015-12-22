@@ -1,0 +1,8 @@
+---
+---
+
+{% for stat in site.data.stats %}
+    {
+        "name": {}
+    }
+{% endfor %}

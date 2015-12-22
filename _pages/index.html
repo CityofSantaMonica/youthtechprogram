@@ -25,15 +25,51 @@ jumbotron:
 ---
 
 <main class="container">
-    <class class="row">
-        {% include modules/faq-renderer.html faq=site.data.faq.sections %}
-    </class>
+    <div class="program-overview">
+        <h2>Program Overview</h2>
 
-    <div class="row">
-        {% for alum in site.alum_stories %}
-            <div class="col-md-6">
-                {{ alum.output }}
-            </div>
-        {% endfor %}
+        <div class="">
+            <img src="http://placehold.it/200x200" />
+            <img src="http://placehold.it/200x200" />
+            <img src="http://placehold.it/200x200" />
+            <img src="http://placehold.it/200x200" />
+            <img src="http://placehold.it/200x200" />
+        </div>
+
+        <!-- <li>Application period: 01/01/2016 - 03/15/2016</li> -->
+
+        <ul>
+            <li>Learn coding, graphic design, and lean start-up methods</li>
+            <li>Apply critical thinking skills. Collaborate and accept leadership roles.</li>
+            <li>The competitive application process includes an online application, in depth interview, and a comprehensive assessment by a selection panel</li>
+        </ul>
+    </div>
+
+    <div class="upcoming-events">
+        <h2>Upcoming Events</h2>
+
+        <div class="">
+            {% for event in site.data.events %}
+                {% assign nowUnix = 'now' | date: '%s' | plus: 0 %}
+                {% assign eventUnix = event.date | date: '%s' | plus: 86400 %}
+
+                {% comment %}Only render events that are in the future, we'll have JS cover for us so we don't have to regenerate the entire website{% endcomment %}
+                {% if eventUnix > nowUnix %}
+                    <div class="event js-event" data-date="{{ event.date }}">
+                        <p class="name">
+                            <strong>{{ event.date | date: "%b %-d" }}</strong>
+                            -
+                            <span>{{ event.name }}</span>
+                        </p>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+
+    <div class="program-statistics">
+        <h2>Program Statistics</h2>
+
+        {% include partials/carousel.html title="program-stats" content="partials/stats.html" controls=true size=4 %}
     </div>
 </main>
