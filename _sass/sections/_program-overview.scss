@@ -1,0 +1,36 @@
+.program-overview {
+    .blackboard {
+        h3 {
+            font-family: 'Slabo 27px', serif;
+            font-size: 36px;
+            margin: {
+                bottom: 30px;
+                top: 0;
+            }
+        }
+    }
+
+    .canvas {
+        .actor {
+            text-align: center;
+
+            img {
+                border-radius: 50%;
+                margin-bottom: 10px;
+                max-width: 100%;
+            }
+
+            &.top-1 {
+
+            }
+
+            &.top-2 {
+                margin-top: 80px;
+            }
+
+            &.top-3 {
+                margin-top: 30px;
+            }
+        }
+    }
+}

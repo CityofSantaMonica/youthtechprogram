@@ -16,6 +16,7 @@ social:
 resources:
   css:
     - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css
+    - https://fonts.googleapis.com/css?family=Slabo+27px
     - /assets/css/main.css
   js:
     - https://use.fonticons.com/04cbad09.js

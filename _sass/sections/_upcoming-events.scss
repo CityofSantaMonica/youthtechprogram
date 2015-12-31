@@ -1,0 +1,68 @@
+.upcoming-events {
+    .theater {
+        .photo {
+            margin: 0 auto;
+            transform: rotate(-2deg);
+            transform-origin: 50% 53%;
+            width: 80%;
+        }
+    }
+
+    .events {
+        h2 {
+            border-bottom: 1px solid #DBDBDB;
+            padding-bottom: 10px;
+        }
+    }
+
+    .calendar {
+        .event {
+            .icon,
+            .info {
+                float: left;
+            }
+
+            .icon {
+                margin-top: 3px;
+                text-align: center;
+                width: 30px;
+
+                .date {
+                    font-size: 16px;
+                }
+
+                .month {
+                    font-size: 12px;
+                }
+            }
+
+            .info {
+                padding-left: 15px;
+
+                .day {
+                    font-size: 14px;
+                    margin: 0;
+                }
+
+                .name {
+                    font-weight: bold;
+
+                    &:before {
+                        $height: 6px;
+
+                        background-color: #486699;
+                        border-radius: 50%;
+                        content: '';
+                        display: inline-block;
+                        height: $height;
+                        margin: {
+                            bottom: 2px;
+                            right: 5px;
+                        }
+                        width: $height;
+                    }
+                }
+            }
+        }
+    }
+}
