@@ -1,16 +1,16 @@
 .upcoming-events {
+    background-color: $ytp-light;
+
     .theater {
         .photo {
             margin: 0 auto;
-            transform: rotate(-2deg);
-            transform-origin: 50% 53%;
             width: 80%;
         }
     }
 
     .events {
         h2 {
-            border-bottom: 1px solid #DBDBDB;
+            border-bottom: 1px solid $ytp-secondary;
             padding-bottom: 10px;
         }
     }
@@ -50,7 +50,7 @@
                     &:before {
                         $height: 6px;
 
-                        background-color: #486699;
+                        background-color: $ytp-primary;
                         border-radius: 50%;
                         content: '';
                         display: inline-block;

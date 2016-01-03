@@ -1,7 +1,9 @@
 .page-section {
+    $height: $spacing-vertical;
+
     padding: {
-        bottom: 30px;
-        top: 30px;
+        bottom: $height;
+        top: $height;
     }
 }
 
