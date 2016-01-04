@@ -1,17 +1,18 @@
 {% for stat in site.data.stats %}
     <div class="item {% if forloop.first %}active{% endif %}">
         <div class="row">
-            <div class="col-md-6">
-                <canvas id="{{ stat.name }}-chart" class="stat-chart" width="400" height="400"></canvas>
+            <div class="col-md-4">
+                <div id="{{ stat.name }}-chart" class="stat-chart"></div>
             </div>
 
-            <div class="col-md-6">
-                <h4>{{ stat.title }}</h4>
+            <div class="col-md-8 blackboard">
+                <h2 class="section-header">{{ stat.title }}</h2>
+                <h3>{{ stat.slug }}</h3>
 
                 {% if stat.content %}
-                    <section>
+                    <article>
                         {{ stat.content | markdownify }}
-                    </section>
+                    </article>
                 {% endif %}
             </div>
         </div>
@@ -19,14 +20,29 @@
 {% endfor %}
 
 <script>
-    var pieOptions = {};
-    var statData = {{ site.data.stats | jsonify }}
-    var ctw = $(".stat-chart");
-    var charts = [];
+    var barOptions = {
 
-    for (i = 0; i < ctw.length; i++) {
-        if (statData[i]["type"] === "pie") {
-            charts.push(new Chart(ctw[i].getContext("2d")).Pie(statData[i]["data"]));
-        }
-    }
+    };
+    var pieOptions = {
+        height: 200,
+        width: 200,
+        chartPadding: 30,
+        labelOffset: 50,
+        labelDirection: "explode"
+    };
+
+    {% for stat in site.data.stats %}
+        {% capture chartID %}#{{ stat.name }}-chart{% endcapture %}
+
+        {% if stat.type == "pie" %}
+            new Chartist.Pie("{{ chartID }}", {{ stat.data | jsonify }}, pieOptions);
+        {% elsif stat.type == "bar" %}
+            new Chartist.Bar("{{ chartID }}", {{ stat.data | jsonify }}, barOptions);
+        {% endif %}
+    {% endfor %}
+
+
+    $('#program-stats').bind('slid.bs.carousel', function (e) {
+        $(e.relatedTarget).find(".stat-chart")[0].__chartist__.update()
+    });
 </script>

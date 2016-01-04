@@ -1,26 +1,53 @@
-- name: "race"
-  type: "pie"
-  title: "Sample Title of Slide"
+- name: interns
+  type: bar
+  title: Internship Placement
+  slug: Our alumni are gaining more experience
   content: >
-    lorum ipsum, some sort of description
+    100% of our eligible alumni, alumni in college for at least a year, have been accepted to internships at awesome places such as Sony, Hulu, and Lionsgate.
   data:
-    - label: "Asian"
-      value: 10
-      color: "#F7464A"
-    - label: "Hispanic/Latino"
-      value: 10
-      color: "#46BFBD"
-    - label: "Caucasian"
-      value: 10
-      color: "#FDB45C"
+    labels:
+      - 2012
+      - 2015
+    series:
+      -
+        - 15
+        - 15
 
-- name: "gender"
-  type: "pie"
-  title: "Simply another slide"
+- name: gender
+  type: pie
+  title: 2015 Female Participation
+  slug: Closing the gender gap in the technology workforce
+  content: >
+    In the 2015 program, we reached an all-time high of 45.7% female participation.
   data:
-    - label: "Male"
-      value: 60
-      color: "#F7464A"
-    - label: "Female"
-      value: 40
-      color: "#46BFBD"
+    series:
+      - name: Male
+        value: 19
+      - name: Female
+        value: 16
+
+- name: growth
+  type: pie
+  title: Our program's growth
+  slug: Expanding as much as the technology workforce
+  content: >
+    Our program has grown from 13 participants in 2012 with 2 teams to having 35 participants with 5 teams in the 2015 program.
+  data:
+    series:
+      - name: 2012
+        value: 13
+      - name: 2015
+        value: 35
+
+- name: acceptance
+  type: pie
+  title: 2015 Acceptance Rate
+  slug: Applicants from all over Santa Monica competing
+  content: >
+    For the 2015 program, there was a 32.4% acceptance rate into the program.
+  data:
+    series:
+      - name: Applied
+        value: 108
+      - name: Accepted
+        value: 35

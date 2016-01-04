@@ -1,24 +1,26 @@
-<div id="{{ include.title }}" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-        {% for i in (1..include.size) %}
-            <li data-target="#{{ include.title }}" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
-        {% endfor %}
-    </ol>
+<div id="{{ include.title }}" class="carousel slide {{ include.class }}" data-ride="carousel">
+    {% if include.indicators %}
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            {% for i in (1..include.size) %}
+                <li data-target="#{{ include.title }}" data-slide-to="{{ forloop.index0 }}" class="{% if forloop.first %}active{% endif %}"></li>
+            {% endfor %}
+        </ol>
+    {% endif %}
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         {% include {{ include.content }} %}
     </div>
 
-    <!-- Controls -->
     {% if include.controls %}
+        <!-- Controls -->
         <a class="left carousel-control" href="#{{ include.title }}" role="button" data-slide="prev">
-            <span class="icon-prev" aria-hidden="true"></span>
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
             <span class="sr-only">Previous</span>
         </a>
         <a class="right carousel-control" href="#{{ include.title }}" role="button" data-slide="next">
-            <span class="icon-next" aria-hidden="true"></span>
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
             <span class="sr-only">Next</span>
         </a>
     {% endif %}

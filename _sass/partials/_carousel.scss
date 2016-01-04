@@ -33,3 +33,19 @@
         }
     }
 }
+
+.carousel {
+    &.transparent {
+        .carousel-control {
+            background: transparent;
+            color: black;
+            text-shadow: none;
+
+            i {
+                position: absolute;
+                left: 45%;
+                top: 47%;
+            }
+        }
+    }
+}
