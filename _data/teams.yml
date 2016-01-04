@@ -1,0 +1,51 @@
+- name: Coblic
+  desc: Social Media Service
+  mission: A social media agency that helps businesses connect with millennials
+
+- name: Dynami Systems
+  desc: Bike-Share Application
+  mission: A company that will provide a webapp to bike sharing companies.
+
+- name: Find Some Yum
+  desc: Culinary Program
+  mission: Allow for individuals to express their culinary imagination through a unique hands-on learning experience and web based interface
+
+- name: Foodonym
+  desc: Provides healthier alternatives
+  mission: To provide a convenient service for people to find healthier alternatives to their favorite foods
+
+- name: Interest Alley
+  desc: Internship and Volunteer Service
+  mission: To empower students with internship/volunteer opportunities designed to explore their interests, allow their minds to flourish, and manifest their potential while preparing them for success in the workplace of the 21st century
+
+- name: Khordify
+  desc: Tangle free headphones
+  mission: Committed to untangling the mobile music listening experience
+
+- name: The OddSpots
+  desc: Discover vintage and hard-to-find vendors
+  mission: A mobile website that helps you discover vintage and hard-to-find vendors in and around the Santa Monica area
+
+- name: QckPrk
+  desc: Parking Service
+  mission: To provide cities with a useful application that will supply its users with easy-to-use information for a relating and efficient experience in the city.
+
+- name: SMFitNet
+  desc: Fitness and Health Service
+  mission: We, at SM FitNet, believe that the physical health of teens is important to this community, so we have made it our mission to provide a service that helps teens create good health and fitness habits.
+
+- name: Spinzie
+  desc: Activity Generator
+  mission: A web-based application for finding what to do in Santa Monica.
+
+- name: StreetGlyph
+  desc: Locate local street art
+  mission: Aims to connect artists and art lovers by locating local street art and changing the social stigma surrounding the art.
+
+- name: TutorPlug
+  desc: Tutoring Service
+  mission: A web service that aims to make tutor- searching affordable and simple
+
+- name: Zermely
+  desc: Location and Crowd Service
+  mission: Identify the location and density of crowds in Santa Monica’s public areas

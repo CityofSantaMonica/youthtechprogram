@@ -1,0 +1,18 @@
+<section class="past-companies page-section">
+    <div class="container">
+        <h2>Previous Teams</h2>
+
+        <article class="section-spacer">
+            <p>Over the past 3 years, we have had 13 companies built and started.</p>
+        </article>
+
+        <div class="holding-company">
+            {% for company in site.data.teams %}
+                <div class="subsidiary" data-toggle="tooltip" data-placement="bottom" title="{{ company.desc }}">
+                    <img src="/assets/images/companies/{{ company.name | replace: ' ', '' }}.png" alt="{{ company.name }}'s logo">
+                    <p>{{ company.name }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

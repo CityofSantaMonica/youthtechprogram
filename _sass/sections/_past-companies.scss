@@ -1,0 +1,25 @@
+.past-companies {
+    .holding-company {
+        text-align: center;
+
+        .subsidiary {
+            display: inline-block;
+            margin-bottom: $spacing-vertical-small;
+            padding: 0 $spacing-vertical;
+            text-align: center;
+
+            img {
+                $height: 100px;
+
+                display: block;
+                height: $height;
+                margin-bottom: 5px;
+                width: $height;
+            }
+
+            p {
+                font-weight: bold;
+            }
+        }
+    }
+}

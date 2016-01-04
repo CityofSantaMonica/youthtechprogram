@@ -13,6 +13,8 @@ $(document).ready(function () {
     //    $("#quote-carousel").html(compiled)
     //});
 
+    $('[data-toggle="tooltip"]').tooltip();
+
     $(".js-event").each(function (e) {
         var $this = $(this);
         var now = new Date();
