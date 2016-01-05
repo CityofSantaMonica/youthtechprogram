@@ -6,12 +6,14 @@ Date.prototype.addDays = function(days)
 };
 
 $(document).ready(function () {
-    //$.getJSON("/assets/data/quotes.json", function (d) {
-    //    var quoteCard = Handlebars.compile($("#quote-card-template").html());
-    //    var compiled = quoteCard({ sources: d });
-    //
-    //    $("#quote-carousel").html(compiled)
-    //});
+    $.getJSON("/assets/data/quotes.json", function (d) {
+        var now = new Date();
+        var quoteCard = Handlebars.compile($("#quote-card-template").html());
+        var quoteBlock = (now.getMonth() <= d.length) ? now.getMonth() : now.getMonth() % d.length;
+        var compiled = quoteCard({ quotes: d[quoteBlock] });
+
+        $("#quotebook").html(compiled)
+    });
 
     $('[data-toggle="tooltip"]').tooltip();
 

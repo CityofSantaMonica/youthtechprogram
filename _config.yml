@@ -1,6 +1,6 @@
 # Site settings
 title: Santa Monica Youth Tech Program
-baseurl: "/youthtechprogram" # the subpath of your site, e.g. /blog/
+baseurl: "/santamonicayouthtech" # the subpath of your site, e.g. /blog/
 url: "http://santamonicayouthtech.com" # the base hostname & protocol for your site
 
 # Social settings
@@ -25,6 +25,7 @@ resources:
     - https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js
+    - https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js
     - https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.5/chartist.min.js
     - /assets/js/main.js
 

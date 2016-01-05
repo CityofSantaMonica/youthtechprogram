@@ -1,0 +1,23 @@
+.quotebook {
+    display: table;
+    table-layout: fixed;
+
+    .quote {
+        display: inline-table;
+        padding-bottom: $spacing-vertical-small;
+        vertical-align: top;
+        width: 50%;
+
+        img {
+            border-radius: 50%;
+        }
+
+        &:nth-child(odd) {
+            padding-right: $spacing-vertical-small;
+        }
+
+        &:nth-child(even) {
+            padding-left: $spacing-vertical-small;
+        }
+    }
+}

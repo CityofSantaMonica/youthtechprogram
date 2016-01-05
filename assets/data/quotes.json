@@ -10,7 +10,9 @@
                 {
                     "name": "{{ quote.name }}",
                     "year": "{{ quote.year }}",
-                    "image": "/assets/images/alumni/{{ quote.name | replace: ' ', '-' }}.png",
+                    "title": "{{ quote.title }}",
+                    "company": "{{ quote.company }}",
+                    "image": "{{ quote.name | replace: ' ', '-' }}.png",
                     "content": "{{ quote.content | strip_newlines }}"
                 }
 
