@@ -5,7 +5,7 @@
         <div class="staff-roster row">
             {% for staff in site.data.staff %}
                 <div class="staff col-xs-6 col-sm-4 col-md-3">
-                    <img src="/assets/images/staff/{{ staff.name | replace: ' ', '' }}.png" alt="{{ staff.name }}'s picture" />
+                    <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.png" alt="{{ staff.name }}'s picture" />
                     <p class="name">{{ staff.name }}</p>
                     <p class="position">{{ staff.position }}</p>
                 </div>

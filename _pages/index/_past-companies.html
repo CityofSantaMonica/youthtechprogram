@@ -9,7 +9,7 @@
         <div class="holding-company">
             {% for company in site.data.teams %}
                 <div class="subsidiary" data-toggle="tooltip" data-placement="bottom" title="{{ company.desc }}">
-                    <img src="/assets/images/companies/{{ company.name | replace: ' ', '' }}.png" alt="{{ company.name }}'s logo">
+                    <img src="{{ site.baseurl }}/assets/images/companies/{{ company.name | replace: ' ', '' }}.png" alt="{{ company.name }}'s logo">
                     <p>{{ company.name }}</p>
                 </div>
             {% endfor %}
