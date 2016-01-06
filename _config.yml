@@ -1,6 +1,6 @@
 # Site settings
 title: Santa Monica Youth Tech Program
-baseurl: "/santamonicayouthtech" # the subpath of your site, e.g. /blog/
+baseurl: "/youthtechprogram" # the subpath of your site, e.g. /blog/
 url: "http://santamonicayouthtech.com" # the base hostname & protocol for your site
 
 # Social settings
