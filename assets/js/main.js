@@ -1,3 +1,12 @@
+function randomSorter() {
+    var team = $(".rsorter"),
+        kids = team.children(".sortable");
+
+    while (kids.length) {
+        team.append(kids.splice(Math.floor(Math.random() * kids.length), 1)[0]);
+    }
+}
+
 Date.prototype.addDays = function(days)
 {
     var dat = new Date(this.valueOf());
@@ -12,7 +21,9 @@ $(document).ready(function () {
         var quoteBlock = (now.getMonth() <= d.length) ? now.getMonth() : now.getMonth() % d.length;
         var compiled = quoteCard({ quotes: d[quoteBlock] });
 
-        $("#quotebook").html(compiled)
+        $("#quotebook").html(compiled);
+
+        randomSorter();
     });
 
     $('[data-toggle="tooltip"]').tooltip();

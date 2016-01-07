@@ -9,7 +9,11 @@
         width: 50%;
 
         img {
+            $height: 125px;
+
             border-radius: 50%;
+            height: $height;
+            width: $height;
         }
 
         &:nth-child(odd) {
