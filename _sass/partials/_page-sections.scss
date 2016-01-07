@@ -1,11 +1,15 @@
 .page-section {
-    $height: $spacing-vertical;
+    $height: 50px;
 
     padding: {
         bottom: $height;
         top: $height;
     }
     position: relative;
+
+    &:first-child {
+        padding-top: $height - 30;
+    }
 }
 
 .page-section--alt {

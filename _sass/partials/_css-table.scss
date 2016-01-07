@@ -1,0 +1,10 @@
+.css-table {
+    display: table;
+    table-layout: fixed;
+
+    .table-cell {
+        display: inline-table;
+        padding-bottom: $spacing-vertical-small;
+        vertical-align: top;
+    }
+}

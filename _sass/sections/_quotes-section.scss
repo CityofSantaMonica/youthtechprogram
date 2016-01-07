@@ -1,13 +1,5 @@
 .quotebook {
-    display: table;
-    table-layout: fixed;
-
     .quote {
-        display: inline-table;
-        padding-bottom: $spacing-vertical-small;
-        vertical-align: top;
-        width: 50%;
-
         img {
             $height: 125px;
 
@@ -16,12 +8,16 @@
             width: $height;
         }
 
-        &:nth-child(odd) {
-            padding-right: $spacing-vertical-small;
-        }
+        @include respond-to(sm) {
+            width: 50%;
 
-        &:nth-child(even) {
-            padding-left: $spacing-vertical-small;
+            &:nth-child(odd) {
+                padding-right: $spacing-vertical-small;
+            }
+
+            &:nth-child(even) {
+                padding-left: $spacing-vertical-small;
+            }
         }
     }
 }
