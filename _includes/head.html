@@ -16,6 +16,10 @@
         {% endif %}
     {% endfor %}
 
+    <script>
+        var baseurl = "{{ site.baseurl }}";
+    </script>
+
     {% for script in site.resources.js %}
         {% if script contains "//" %}
             <script src="{{ script }}"></script>
