@@ -38,16 +38,3 @@
         value: 13
       - name: 2015
         value: 35
-
-- name: acceptance
-  type: pie
-  title: 2015 Acceptance Rate
-  slug: Applicants from all over Santa Monica competing
-  content: >
-    For the 2015 program, there was a 32.4% acceptance rate into the program.
-  data:
-    series:
-      - name: Applied
-        value: 108
-      - name: Accepted
-        value: 35
