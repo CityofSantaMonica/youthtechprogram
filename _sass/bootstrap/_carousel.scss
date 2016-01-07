@@ -5,6 +5,13 @@
     margin-bottom: 30px;
     position: relative;
 
+    .city-logo {
+        position: absolute;
+        right: $spacing-vertical-small;
+        top: $spacing-vertical-small;
+        z-index: 10;
+    }
+
     .navbar {
         position: relative;
         z-index: 10;
