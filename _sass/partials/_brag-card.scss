@@ -1,12 +1,10 @@
 .brag-card {
-    .picture {
+    .image {
         margin-bottom: 15px;
         text-align: center;
 
         @include respond-to(sm) {
-            float: left;
             margin-bottom: 0;
-            padding-right: 15px;
         }
 
         img {
@@ -14,9 +12,7 @@
         }
     }
 
-    .description {
-        overflow: hidden;
-
+    .content {
         .name,
         .year {
             text-align: center;

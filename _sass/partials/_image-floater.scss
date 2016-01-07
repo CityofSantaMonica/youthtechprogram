@@ -1,0 +1,15 @@
+.image-floater {
+    .image {
+        text-align: center;
+
+        @include respond-to(sm) {
+            float: left;
+            padding-right: 15px;
+        }
+    }
+
+    // Clear the float
+    .content {
+        overflow: hidden;
+    }
+}

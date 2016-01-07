@@ -9,8 +9,6 @@
         }
 
         @include respond-to(sm) {
-            width: 50%;
-
             &:nth-child(odd) {
                 padding-right: $spacing-vertical-small;
             }

@@ -1,11 +1,11 @@
 {% raw %}
     <script id="quote-card-template" type="text/x-handlebars-template">
         {{#each quotes}}
-            <article class="brag-card clearfix quote table-cell sortable">
-                <div class="picture">
+            <article class="brag-card clearfix image-floater quote table-cell col-xs-12 col-md-6 sortable">
+                <div class="image">
                     <img src="{{image}}" alt="{{name}}'s picture" />
                 </div>
-                <div class="description">
+                <div class="content">
                     <p class="name">{{name}}</p>
                     <p class="year">{{title}} of {{company}}, {{year}}</p>
                     <section class="bio">

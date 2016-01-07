@@ -4,6 +4,7 @@
 
     .table-cell {
         display: inline-table;
+        float: none;
         padding-bottom: $spacing-vertical-small;
         vertical-align: top;
     }
