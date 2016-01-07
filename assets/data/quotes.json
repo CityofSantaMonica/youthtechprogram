@@ -12,7 +12,7 @@
                     "year": "{{ quote.year }}",
                     "title": "{{ quote.title }}",
                     "company": "{{ quote.company }}",
-                    "image": "{{ quote.name | replace: ' ', '-' }}.jpg",
+                    "image": "{{ site.baseurl }}/assets/images/alumni/{{ quote.name | replace: ' ', '-' }}.jpg",
                     "content": "{{ quote.content | strip_newlines }}"
                 }
 
