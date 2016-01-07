@@ -1,18 +1,66 @@
 .site-footer {
-    background-color: $color-alt-bg;
+    background-color: $ytp-dark;
     border-top: 3px solid $ytp-primary;
+    color: $color-white;
     padding: {
         bottom: $spacing-vertical-small;
         top: $spacing-vertical-small;
     }
 
-    .pages {
-        ul li {
-            margin-right: 10px;
+    .contact {
+        padding: $spacing-vertical-small 0 $spacing-vertical;
+        text-align: center;
+
+        a {
+            color: $ytp-secondary;
         }
     }
 
-    .social {
-        text-align: right;
+    .meta {
+        $light-color: rgba(255, 255, 255, 0.2);
+
+        border-top: 1px solid $light-color;
+        padding-top: $spacing-vertical;
+        text-align: center;
+
+        .join-us {
+            color: $light-color;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .social {
+            li {
+                border-radius: 50%;
+                display: inline-block;
+                text-align: center;
+                vertical-align: bottom;
+                height: 35px;
+                line-height: 35px;
+                width: 35px;
+                border: 1px solid $light-color;
+                margin-right: 10px;
+
+                a {
+                    color: $light-color;
+                }
+
+                &:hover {
+                    border-color: $color-white;
+
+                    a {
+                        color: $color-white;
+                    }
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .copyright {
+            color: $light-color;
+        }
     }
 }

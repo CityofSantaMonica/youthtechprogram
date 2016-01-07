@@ -1,23 +1,30 @@
 <footer class="site-footer">
     <div class="container">
         <div class="row">
-            <section class="pages col-sm-10">
-                <ul class="horizontal">
-                    {% include partials/pages.html %}
-                </ul>
+            <section class="contact">
+                <p>
+                    <strong>For any questions or concerns, contact Gary Carter</strong>
+                    <br>
+                    <a href="tel:3104342612">(310) 434-2612</a>
+                    or
+                    <a href="mailto:gary.carter@smgov.net">gary.carter@smgov.net</a>
+                </p>
             </section>
+        </div>
 
-            <section class="social col-sm-2">
-                <ul class="horizontal">
-                    {% for sm in site.social %}
-                        <li>
-                            <a href="{{ sm.url }}" title="{{ sm.title }}">
-                                <span class="icon {{ sm.icon }}"></span>
-                            </a>
-                        </li>
-                    {% endfor %}
-                </ul>
-            </section>
+        <div class="meta">
+            <p class="join-us">Join Us On</p>
+            <ul class="social horizontal">
+                {% for sm in site.social %}
+                    <li>
+                        <a href="{{ sm.url }}" title="{{ sm.title }}">
+                            <span class="icon {{ sm.icon }}"></span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <p class="copyright">City of Santa Monica &copy; 2015</p>
         </div>
     </div>
 </footer>
