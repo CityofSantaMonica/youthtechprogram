@@ -1,9 +1,9 @@
 - name: interns
   type: bar
   title: Internship Placement
-  slug: Our alumni are gaining more experience
+  slug: This is a flatline we love
   content: >
-    100% of our eligible alumni, alumni in college for at least a year, have been accepted to internships at awesome places such as Sony, Hulu, and Lionsgate.
+    100% of our eligible alumni, alumni in college for at least a year, have been accepted to internships at awesome places such as Sony, Favrit, and Lionsgate.
   data:
     labels:
       - 2012

@@ -1,5 +1,6 @@
 .past-companies {
     .holding-company {
+        margin-bottom: -1 * $spacing-vertical-small; // Cancel out the last row of margin
         text-align: center;
 
         .subsidiary {
