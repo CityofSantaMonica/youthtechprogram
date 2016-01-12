@@ -1,6 +1,16 @@
+- name: Samohi Career Day
+  date: 2016-02-23
+  image: career_day.png
+  desc: Staff at Samohi's Career Day
+
 - name: Application Closes
   date: 2016-03-15
+  image: city_hall-front.jpg
+
 - name: 2016 Program Begins
   date: 2016-06-13
+  image: council-chambers.jpg
+
 - name: 2016 Pitch Night
   date: 2016-07-21
+  image: judges.jpg

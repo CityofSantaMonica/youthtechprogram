@@ -1,8 +1,14 @@
 .photo {
     border: 1px solid #B2B2B2;
+    display: inline-block;
 
     img {
-        border: 10px solid $color-white;
+        border: 7px solid $color-white;
+        display: block;
         max-width: 100%;
+
+        @include respond-to(md) {
+            border-width: 10px;
+        }
     }
 }

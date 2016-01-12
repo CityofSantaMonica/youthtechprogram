@@ -2,18 +2,39 @@
     <div class="container">
         <div class="row">
             <div class="theater col-md-6">
-                {% include modules/photo.html photo="photos/career_day_1.png" alt="Staff at Samohi's Career Day" %}
+                <div class="tab-content">
+                    {% for event in site.data.events %}
+                        {% assign nowUnix = 'now' | date: '%s' | plus: 0 %}
+                        {% assign eventUnix = event.date | date: '%s' | plus: 86400 %}
+
+                        {% comment %}
+                            Only render the photos for events that have not passed
+                        {% endcomment %}
+                        {% if eventUnix > nowUnix %}
+                            <div id="event-{{ forloop.index }}"
+                                 class="js-event tab-pane fade {% if forloop.first %}in active{% endif %}"
+                                 data-date="{{ event.date }}"
+                                 role="tab">
+                                {% capture photoUrl %}photos/{{ event.image }}{% endcapture %}
+                                {% include modules/photo.html photo=photoUrl alt=event.desc %}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
             </div>
 
             <div class="events col-md-6">
                 <h2 class="section-header">Upcoming Events</h2>
 
-                <section class="calendar">
+                <section class="calendar" id="upcoming-events" role="tablist">
                     {% for event in site.data.events %}
                         {% assign nowUnix = 'now' | date: '%s' | plus: 0 %}
                         {% assign eventUnix = event.date | date: '%s' | plus: 86400 %}
 
-                        {% comment %}Only render events that are in the future, we'll have JS cover for us so we don't have to regenerate the entire website{% endcomment %}
+                        {% comment %}
+                            Only render events that are in the future. We'll have a JavaScript fallback between updates
+                            to the website so old events are not shown.
+                        {% endcomment %}
                         {% if eventUnix > nowUnix %}
                             <div class="event clearfix js-event" data-date="{{ event.date }}">
                                 <div class="icon">
@@ -22,7 +43,11 @@
                                 </div>
                                 <div class="info">
                                     <p class="day">{{ event.date | date: "%A" }}</p>
-                                    <p class="name">{{ event.name }}</p>
+                                    <p class="name" role="presentation">
+                                        <a href="#event-{{ forloop.index }}"
+                                           data-toggle="tab"
+                                           role="tab">{{ event.name }}</a>
+                                    </p>
                                 </div>
                             </div>
                         {% endif %}

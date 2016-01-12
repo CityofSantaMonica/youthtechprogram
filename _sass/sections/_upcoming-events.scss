@@ -1,9 +1,7 @@
 .upcoming-events {
     .theater {
-        .photo {
-            margin: 0 auto;
-            width: 80%;
-        }
+        margin-bottom: $spacing-vertical;
+        text-align: center;
     }
 
     .events {
@@ -44,6 +42,10 @@
 
                 .name {
                     font-weight: bold;
+
+                    a {
+                        color: $color-black;
+                    }
 
                     &:before {
                         $height: 6px;
