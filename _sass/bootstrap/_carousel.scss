@@ -1,7 +1,18 @@
-.header-carousel {
-    $header-height: 400px;
+@mixin responsive-carousel($viewsize, $height) {
+    @include respond-to($viewsize) {
+        height: $height;
 
-    height: $header-height;
+        .carousel {
+            height: $height;
+        }
+    }
+}
+
+.header-carousel {
+    @include responsive-carousel(xs, 400px);
+    @include responsive-carousel(sm, 450px);
+    @include responsive-carousel(md, 500px);
+
     margin-bottom: 30px;
     position: relative;
 
@@ -18,7 +29,6 @@
     }
 
     .carousel {
-        height: $header-height;
         position: absolute;
         top: 0;
         width: 100%;
