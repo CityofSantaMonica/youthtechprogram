@@ -2,7 +2,6 @@
     <div class="container">
         <div class="blackboard">
             <h2 class="section-header">Awards</h2>
-            <h3>People are talking about us</h3>
         </div>
         <div class="trophy-case row css-table">
             {% for award in site.awards %}
@@ -14,9 +13,6 @@
                     </div>
                     <div class="description">
                         <article>{{ award.output }}</article>
-                        <p class="text-right">
-                            <a href="{{ award.url }}" title="Read more about our award from {{ award.name }}">Read More &raquo;</a>
-                        </p>
                     </div>
                 </div>
             {% endfor %}
