@@ -70,8 +70,8 @@ jumbotron:
 </style>
 
 <div id="header-carousel" class="carousel slide" data-ride="carousel">
-    <img class="city-logo" src="/assets/images/city-logo.png" />
-    
+    <img class="city-logo" src="{{ site.baseurl }}/assets/images/city-logo.png" />
+
     {% unless include.jumbotron.disableIndicators %}
         {% if include.jumbotron.items.size > 1 %}
             <ol class="carousel-indicators">
