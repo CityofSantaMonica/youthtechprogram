@@ -1,12 +1,16 @@
 $icons: (
-    collaboration: Chat,
-    leadership: Rocket,
-    thinking: Gears,
+    chat: Chat,
+    rocket: Rocket,
+    gears: Gears,
     chemistry: Chemistry,
     supergirl: Supergirl
 );
 
 .program-overview {
+    .blackboard {
+        margin-bottom: $spacing-vertical;
+    }
+
     .canvas {
         margin-top: -20px;
 
