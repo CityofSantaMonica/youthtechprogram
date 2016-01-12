@@ -28,13 +28,17 @@ $icons: (
             }
 
             .po-icon {
-                $height: 130px;
-
                 background-size: cover;
                 content: '';
-                height: $height;
                 margin: 0 auto;
-                width: $height;
+
+                height: 100px;
+                width: 100px;
+
+                @include respond-to(sm) {
+                    height: 130px;
+                    width: 130px;
+                }
 
                 @each $class, $icon in $icons {
                     &.#{$class} {
