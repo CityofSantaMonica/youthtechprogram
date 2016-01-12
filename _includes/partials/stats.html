@@ -42,7 +42,7 @@
     // Generate Chartist constructors for each available stat
     {% for stat in site.data.stats %}
         {% capture chartID %}#{{ stat.name }}-chart{% endcapture %}
-        {% capture chartType}{{ stat.type | capitalize }}{% endcapture %}
+        {% capture chartType %}{{ stat.type | capitalize }}{% endcapture %}
 
         new Chartist.{{ chartType }}("{{ chartID }}", {{ stat.data | jsonify }}, {{ chartType }}Options);
     {% endfor %}
