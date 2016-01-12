@@ -1,5 +1,15 @@
+$icons: (
+    collaboration: Chat,
+    leadership: Rocket,
+    thinking: Gears,
+    chemistry: Chemistry,
+    supergirl: Supergirl
+);
+
 .program-overview {
     .canvas {
+        margin-top: -20px;
+
         .actor {
             text-align: center;
 
@@ -9,37 +19,27 @@
                 width: 100px;
             }
 
+            p {
+                font-weight: bold;
+            }
 
             .po-icon {
+                $height: 130px;
+
                 background-size: cover;
                 content: '';
-                height: 100px;
+                height: $height;
                 margin: 0 auto;
-                width: 100px;
+                width: $height;
 
-                &.collaboration {
-                    background-image: url('../images/icons/Chat.png');
+                @each $class, $icon in $icons {
+                    &.#{$class} {
+                        background-image: url('../images/icons/#{$icon}.png');
 
-                    &:hover {
-                        background-image: url('../images/icons/Chat-Active.png');
+                        &:hover {
+                            background-image: url('../images/icons/#{$icon}-Active.png');
+                        }
                     }
-                }
-
-                &.leadership {
-                    background-image: url('../images/icons/Rocket.png');
-
-                    &:hover {
-                        background-image: url('../images/icons/Rocket-Active.png');
-                    }
-                }
-
-                &.thinking {
-                    background-image: url('../images/icons/Gears.png');
-
-                    &:hover {
-                        background-image: url('../images/icons/Gears-Active.png');
-                    }
-                    width: 110px;
                 }
             }
         }
