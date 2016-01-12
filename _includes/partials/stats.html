@@ -20,28 +20,34 @@
 {% endfor %}
 
 <script>
-    var barOptions = {
-
+    var LineOptions = {
+        low: 12,
+        high: 18,
+        fullWidth: true,
+        lineSmooth: false,
+        chartPadding: {
+            right: 40
+        },
+        axisY: {
+            onlyInteger: true,
+            offset: 20
+        }
     };
-    var pieOptions = {
+    var PieOptions = {
         height: 200,
         width: 200,
-        chartPadding: 30,
-        labelOffset: 50,
-        labelDirection: "explode"
+        showLabel: false
     };
 
+    // Generate Chartist constructors for each available stat
     {% for stat in site.data.stats %}
         {% capture chartID %}#{{ stat.name }}-chart{% endcapture %}
+        {% capture chartType}{{ stat.type | capitalize }}{% endcapture %}
 
-        {% if stat.type == "pie" %}
-            new Chartist.Pie("{{ chartID }}", {{ stat.data | jsonify }}, pieOptions);
-        {% elsif stat.type == "bar" %}
-            new Chartist.Bar("{{ chartID }}", {{ stat.data | jsonify }}, barOptions);
-        {% endif %}
+        new Chartist.{{ chartType }}("{{ chartID }}", {{ stat.data | jsonify }}, {{ chartType }}Options);
     {% endfor %}
 
-
+    // Update Charts on resize (just in case)
     $('#program-stats').bind('slid.bs.carousel', function (e) {
         $(e.relatedTarget).find(".stat-chart")[0].__chartist__.update()
     });
