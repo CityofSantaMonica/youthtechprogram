@@ -11,7 +11,7 @@
 .header-carousel {
     @include responsive-carousel(xs, 400px);
     @include responsive-carousel(sm, 450px);
-    @include responsive-carousel(md, 500px);
+    @include responsive-carousel(md, 600px);
 
     margin-bottom: 30px;
     position: relative;
