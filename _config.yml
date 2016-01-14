@@ -15,7 +15,6 @@ social:
 # Resources
 resources:
   css:
-    - https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css
     - https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css
     - https://cdnjs.cloudflare.com/ajax/libs/chartist/0.9.5/chartist.min.css
     - https://fonts.googleapis.com/css?family=Slabo+27px

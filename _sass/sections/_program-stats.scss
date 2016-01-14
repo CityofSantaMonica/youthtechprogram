@@ -1,16 +1,3 @@
-@mixin carouselPadding($padding, $row: $padding) {
-    .carousel-control {
-        width: $padding;
-    }
-
-    .row {
-        padding: {
-            left: $row;
-            right: $row;
-        }
-    }
-}
-
 @mixin colors($class, $color) {
     &.#{$class} {
         &:before {
@@ -19,12 +6,38 @@
     }
 }
 
+$controlWidth: 10%;
+
 .program-statistics {
     .carousel {
-        @include carouselPadding(10%, 15%);
+        .carousel-control {
+            display: none;
 
-        @include respond-to(md) {
-            @include carouselPadding(5%);
+            @include respond-to(ms) {
+                display: block;
+                width: $controlWidth;
+            }
+        }
+
+        .item {
+            .row {
+                // Hard code this value to prevent the page from shifting on mobile
+                height: 550px;
+
+                @include respond-to(ms) {
+                    height: auto;
+                    padding: {
+                        left: $controlWidth;
+                        right: $controlWidth;
+                    }
+                }
+            }
+        }
+
+        .bottom-carousel-control {
+            @include respond-to(ms) {
+                display: none;
+            }
         }
     }
 

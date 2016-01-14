@@ -60,9 +60,15 @@
 
             i {
                 position: absolute;
-                left: 45%;
+                left: 40%;
                 top: 47%;
             }
+        }
+    }
+
+    .bottom-carousel-control {
+        .left {
+            text-align: right;
         }
     }
 }

@@ -1,5 +1,7 @@
+// 480px is a non-standard BS3 breakpoint that should have existed
 $breakpoints: (
     xs: 0,
+    ms: 480px,
     sm: 768px,
     md: 992px,
     lg: 1200px
