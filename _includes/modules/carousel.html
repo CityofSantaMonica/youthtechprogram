@@ -1,4 +1,8 @@
-<div id="{{ include.title }}" class="carousel slide {{ include.class }}" data-ride="carousel">
+<div id="{{ include.title }}"
+     class="carousel slide {{ include.class }}"
+     data-ride="carousel"
+     {% if include.interval %}data-interval="{{ include.interval | times: 1000 }}"{% endif %}
+    >
     {% if include.indicators %}
         <!-- Indicators -->
         <ol class="carousel-indicators">

@@ -1,5 +1,24 @@
+# How this file works
+#
+# - name:        # This is the Javascript ID, make sure it's unique per chart
+#   type:
+#     primary:   # The primary chart type: Line, Bar, or Pie
+#     secondary: # The secondary chart type. This is to be used if you're extending the default chart options but adding
+#                # more options. For example, using a "Percent" secondary type will allow you to create a LinePercentOptions
+#                # object in JavaScript that will be used. When creating this object, use jQuery's $.extend() to extend
+#                # the original options.
+#   title:       # The main header/title of each slide
+#   slug:        # The slug or secondary header
+#   content:     # The content that will serve as the explanation or description of this chart. Markdown is support here
+#   data:        # The data for charts are to be in the YAML equivalent of the JSON definitions found below:
+#                #    - Bar:  https://gionkunz.github.io/chartist-js/api-documentation.html#chartistbar-function-bar
+#                #    - Line: https://gionkunz.github.io/chartist-js/api-documentation.html#chartistline-function-line
+#                #    - Pie:  https://gionkunz.github.io/chartist-js/api-documentation.html#chartistpie-function-pie
+
 - name: interns
-  type: line
+  type:
+    primary: line
+    secondary: percent
   title: Internship Placement
   slug: This is a flatline we love
   content: >
@@ -12,38 +31,70 @@
       - 2015
     series:
       -
-        - 15
-        - 15
-        - 15
-        - 15
+        - 100
+        - 100
+        - 100
+        - 100
       -
-        - 15
-        - 15
-        - 15
-        - 15
+        - 100
+        - 100
+        - 100
+        - 100
 
 - name: gender
-  type: pie
-  title: 2015 Female Participation
+  type:
+    primary: line
+  title: Female Participation
   slug: Closing the gender gap in the technology workforce
   content: >
     In the 2015 program, we reached an all-time high of 45.7% female participation.
   data:
+    labels:
+      - 2012
+      - 2013
+      - 2014
+      - 2015
     series:
-      - name: Male
-        value: 19
-      - name: Female
-        value: 16
+      -
+        - 2
+        - 1
+        - 5
+        - 16
 
 - name: growth
-  type: pie
-  title: Our program's growth
-  slug: Expanding as much as the technology workforce
+  type:
+    primary: line
+  title: Program growth
+  slug: Look how far we’ve come
   content: >
     Our program has grown from 13 participants in 2012 with 2 teams to having 35 participants with 5 teams in the 2015 program.
   data:
+    labels:
+      - 2012
+      - 2013
+      - 2014
+      - 2015
     series:
-      - name: 2012
-        value: 13
-      - name: 2015
-        value: 35
+      -
+        - 13
+        - 8
+        - 28
+        - 35
+
+- name: ethnicity
+  type:
+    primary: pie
+  title: TDB
+  slug: Maintaining a diverse environment
+  content: >
+    High school students from all backgrounds are working together to successfully create start-ups
+  data:
+    series:
+      - name: Placeholder
+        value: 5
+      - name: Placeholder 2
+        value: 10
+      - name: Placeholder 3
+        value: 15
+      - name: Placeholder 4
+        value: 20

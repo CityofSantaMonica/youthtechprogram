@@ -21,8 +21,8 @@
 
 <script>
     var LineOptions = {
-        low: 12,
-        high: 18,
+        height: 200,
+        width: 300,
         fullWidth: true,
         lineSmooth: false,
         chartPadding: {
@@ -33,6 +33,13 @@
             offset: 20
         }
     };
+    var LinePercentOptions = $.extend({}, LineOptions, {
+        axisY: {
+            labelInterpolationFnc: function(value) {
+              return value + '%';
+            }
+        }
+    });
     var PieOptions = {
         height: 200,
         width: 200,
@@ -42,9 +49,10 @@
     // Generate Chartist constructors for each available stat
     {% for stat in site.data.stats %}
         {% capture chartID %}#{{ stat.name }}-chart{% endcapture %}
-        {% capture chartType %}{{ stat.type | capitalize }}{% endcapture %}
+        {% assign chartPrimaryType = stat.type.primary | capitalize {% endassign %}
+        {% assign chartSecondaryType = stat.type.secondary | capitalize {% endassign %}
 
-        new Chartist.{{ chartType }}("{{ chartID }}", {{ stat.data | jsonify }}, {{ chartType }}Options);
+        new Chartist.{{ chartPrimaryType }}("{{ chartID }}", {{ stat.data | jsonify }}, {{ chartPrimaryType }}{{ chartSecondaryType }}Options);
     {% endfor %}
 
     // Update Charts on resize (just in case)
