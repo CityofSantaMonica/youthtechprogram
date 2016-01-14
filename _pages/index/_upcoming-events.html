@@ -37,7 +37,7 @@
                         {% endcomment %}
                         {% if eventUnix > nowUnix %}
                             <div class="event clearfix js-event" data-date="{{ event.date }}">
-                                <div class="icon">
+                                <div class="cal">
                                     <p class="date">{{ event.date | date: "%-d" }}</p>
                                     <p class="month">{{ event.date | date: "%b" }}</p>
                                 </div>
@@ -48,6 +48,14 @@
                                            data-toggle="tab"
                                            role="tab">{{ event.name }}</a>
                                     </p>
+                                </div>
+                                <div class="rsvp">
+                                    {% if event.link %}
+                                        <a href="{{ event.link }}">
+                                            <i class="icon icon-event-note"></i>
+                                            <span>RSVP</span>
+                                        </a>
+                                    {% endif %}
                                 </div>
                             </div>
                         {% endif %}

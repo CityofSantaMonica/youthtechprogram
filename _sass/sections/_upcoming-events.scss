@@ -13,12 +13,12 @@
 
     .calendar {
         .event {
-            .icon,
+            .cal,
             .info {
                 float: left;
             }
 
-            .icon {
+            .cal {
                 margin-top: 3px;
                 text-align: center;
                 width: 30px;
@@ -61,6 +61,17 @@
                         }
                         width: $height;
                     }
+                }
+            }
+
+            .rsvp {
+                float: right;
+                font-weight: bold;
+                padding-top: 15px;
+
+                .icon {
+                    font-size: 16px;
+                    margin-right: 5px;
                 }
             }
         }
