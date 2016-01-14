@@ -30,7 +30,7 @@
         },
         axisY: {
             onlyInteger: true,
-            offset: 20
+            offset: 10
         }
     };
     var LinePercentOptions = $.extend({}, LineOptions, {
@@ -45,6 +45,19 @@
         width: 200,
         showLabel: false
     };
+    var BarOptions = {
+        horizontalBars: true,
+        stackBars: true,
+        high: 100
+    };
+    var BarPercentOptions = $.extend({}, BarOptions, {
+        axisX: {
+            onlyInteger: true,
+            labelInterpolationFnc: function(value) {
+              return value + '%';
+            }
+        }
+    });
 
     // Generate Chartist constructors for each available stat
     {% for stat in site.data.stats %}

@@ -1,21 +1,58 @@
-$controlWidth: 5%;
+@mixin carouselPadding($padding, $row: $padding) {
+    .carousel-control {
+        width: $padding;
+    }
+
+    .row {
+        padding: {
+            left: $row;
+            right: $row;
+        }
+    }
+}
+
+@mixin colors($class, $color) {
+    &.#{$class} {
+        &:before {
+            background-color: $color;
+        }
+    }
+}
 
 .program-statistics {
     .carousel {
-        .carousel-control {
-            width: $controlWidth;
-        }
+        @include carouselPadding(10%, 15%);
 
-        .row {
-            padding: {
-                left: $controlWidth;
-                right: $controlWidth;
-            }
+        @include respond-to(md) {
+            @include carouselPadding(5%);
         }
     }
 
     .stat-chart {
         height: 200px;
+        margin-bottom: 15px;
         text-align: center;
+    }
+
+    .ethnicity-legend {
+        li {
+            @include colors("api", #d70206);
+            @include colors("cw", #f05b4f);
+            @include colors("hl", #f4c63d);
+            @include colors("aab", #d17905);
+
+            list-style: none;
+            position: relative;
+
+            &:before {
+                content: '';
+                display: block;
+                height: 10px;
+                left: -5px;
+                position: absolute;
+                top: 5px;
+                width: 10px;
+            }
+        }
     }
 }
