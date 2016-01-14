@@ -17,40 +17,25 @@
     }
 
     .meta {
-        $light-color: rgba(255, 255, 255, 0.2);
-
-        border-top: 1px solid $light-color;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 16px;
         padding-top: $spacing-vertical;
         text-align: center;
 
         .join-us {
-            color: $light-color;
-            font-size: 16px;
+            color: $color-white;
             font-weight: bold;
+            margin-bottom: 0;
         }
 
         .social {
             li {
-                border-radius: 50%;
                 display: inline-block;
+                margin-right: 5px;
                 text-align: center;
-                vertical-align: bottom;
-                height: 35px;
-                line-height: 35px;
-                width: 35px;
-                border: 1px solid $light-color;
-                margin-right: 10px;
 
                 a {
-                    color: $light-color;
-                }
-
-                &:hover {
-                    border-color: $color-white;
-
-                    a {
-                        color: $color-white;
-                    }
+                    color: $color-white;
                 }
 
                 &:last-child {
@@ -60,7 +45,8 @@
         }
 
         .copyright {
-            color: $light-color;
+            color: $color-white;
+            font-size: 14px;
         }
     }
 }
