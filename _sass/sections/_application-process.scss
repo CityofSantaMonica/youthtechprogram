@@ -1,0 +1,53 @@
+.process {
+    > div {
+        text-align: center;
+    }
+
+    img {
+        margin-bottom: 15px;
+
+        height: 100px;
+        width: 100px;
+    }
+
+    p {
+        font-weight: bold;
+    }
+
+    .step {
+        margin-bottom: 15px;
+        position: relative;
+
+        p {
+            $size: 24px;
+
+            background-color: $ytp-primary;
+            border-radius: 50%;
+            color: $color-white;
+            display: inline-block;
+            margin-bottom: 0;
+
+            line-height: $size;
+            height: $size;
+            width: $size;
+
+            &:after,
+            &:before {
+                background-color: $ytp-primary;
+                content: '';
+                height: 1px;
+                margin-top: 10px;
+                position: absolute;
+                width: 40%;
+            }
+
+            &:after {
+                right: 0;
+            }
+
+            &:before {
+                left: 0;
+            }
+        }
+    }
+}

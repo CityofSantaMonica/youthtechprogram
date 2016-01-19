@@ -1,0 +1,11 @@
+{% for event in site.data.events %}
+    <div class="item {% if forloop.first %}active{% endif %}">
+        <div id="event-{{ forloop.index }}"
+             class="js-event"
+             data-date="{{ event.date }}"
+             role="tab">
+            {% capture photoUrl %}photos/{{ event.image }}{% endcapture %}
+            {% include modules/photo.html photo=photoUrl alt=event.desc %}
+        </div>
+    </div>
+{% endfor %}

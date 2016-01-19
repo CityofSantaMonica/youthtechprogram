@@ -44,6 +44,7 @@
 - name: gender
   type:
     primary: line
+    secondary: percent
   title: Female Participation
   slug: Closing the gender gap in the technology workforce
   content: >
@@ -56,10 +57,10 @@
       - 2015
     series:
       -
-        - 2
-        - 1
-        - 5
-        - 16
+        - 15.38
+        - 12.50
+        - 20
+        - 45.71
 
 - name: growth
   type:
@@ -67,7 +68,7 @@
   title: Program growth
   slug: Look how far we’ve come
   content: >
-    Our program has grown from 13 participants in 2012 with 2 teams to having 35 participants with 5 teams in the 2015 program.
+    Our program has grown from 13 participants in 2012 to having 35 participants 2015.
   data:
     labels:
       - 2012
@@ -83,18 +84,19 @@
 
 - name: ethnicity
   type:
-    primary: bar
+    primary: line
     secondary: percent
-  title: TDB
+  title: Race/Ethnicity Stats
   slug: Maintaining a diverse environment
   content: >
-    High school students from all backgrounds are working together to successfully create start-ups
+    High school students from all backgrounds are working together to successfully create start-ups.
 
     <ul class="ethnicity-legend row">
+        <li class="col-xs-12 col-sm-6 aab">African American/Black</li>
+        <li class="col-xs-12 col-sm-6 aian">American Indian/Alaskan Native</li>
         <li class="col-xs-12 col-sm-6 api">Asian/Pacific Islander</li>
         <li class="col-xs-12 col-sm-6 cw">Caucasian/White</li>
         <li class="col-xs-12 col-sm-6 hl">Hispanic/Latino</li>
-        <li class="col-xs-12 col-sm-6 aab">African American/Black</li>
     </ul>
   data:
     labels:
@@ -103,23 +105,28 @@
       - 2014
       - 2015
     series:
-      - # 2012
-        - 46.15   # Asian/Pacific Islander
-        - 50      # Caucasian/White
-        - 36      # Hispanic/Lation
-        - 22.86   # African American/Black
-      - # 2013
-        - 23.08
-        - 25
-        - 32
-        - 37.14
-      - # 2014
-        - 23.08
-        - 25
-        - 16
-        - 22.86
-      - # 2015
+      - # African American/Black
         - 7.69
         - 0
         - 16
         - 17.14
+      - # American Indian/Alaskan Native
+        - 0
+        - 0
+        - 0
+        - 0
+      - # Asian/Pacific Islander
+        - 46.15
+        - 50
+        - 36
+        - 22.86
+      - # Caucasian/White
+        - 23.08
+        - 25
+        - 32
+        - 37.14
+      - # Hispanic/Latino
+        - 23.08
+        - 25
+        - 16
+        - 22.86

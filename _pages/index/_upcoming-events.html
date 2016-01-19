@@ -3,23 +3,7 @@
         <div class="row">
             <div class="theater col-md-6">
                 <div class="tab-content">
-                    {% for event in site.data.events %}
-                        {% assign nowUnix = 'now' | date: '%s' | plus: 0 %}
-                        {% assign eventUnix = event.date | date: '%s' | plus: 86400 %}
-
-                        {% comment %}
-                            Only render the photos for events that have not passed
-                        {% endcomment %}
-                        {% if eventUnix > nowUnix %}
-                            <div id="event-{{ forloop.index }}"
-                                 class="js-event tab-pane fade {% if forloop.first %}in active{% endif %}"
-                                 data-date="{{ event.date }}"
-                                 role="tab">
-                                {% capture photoUrl %}photos/{{ event.image }}{% endcapture %}
-                                {% include modules/photo.html photo=photoUrl alt=event.desc %}
-                            </div>
-                        {% endif %}
-                    {% endfor %}
+                    {% include modules/carousel.html title="upcoming-photos" class="transparent" content="partials/upcoming-photos.html" controls=false size=site.data.events.size interval=5 bottomcontrols=false %}
                 </div>
             </div>
 
@@ -43,11 +27,7 @@
                                 </div>
                                 <div class="info">
                                     <p class="day">{{ event.date | date: "%A" }}</p>
-                                    <p class="name" role="presentation">
-                                        <a href="#event-{{ forloop.index }}"
-                                           data-toggle="tab"
-                                           role="tab">{{ event.name }}</a>
-                                    </p>
+                                    <p class="name">{{ event.name }}</p>
                                 </div>
                                 <div class="rsvp">
                                     {% if event.link %}

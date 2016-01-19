@@ -1,4 +1,15 @@
-@mixin colors($class, $color) {
+@mixin colors($series, $class, $color) {
+    @at-root {
+        .ethnicity-chart {
+            .ct-series-#{$series} .ct-bar,
+            .ct-series-#{$series} .ct-line,
+            .ct-series-#{$series} .ct-point,
+            .ct-series-#{$series} .ct-slice-donut {
+                stroke: $color;
+            }
+        }
+    }
+
     &.#{$class} {
         &:before {
             background-color: $color;
@@ -49,10 +60,11 @@ $controlWidth: 10%;
 
     .ethnicity-legend {
         li {
-            @include colors("api", #d70206);
-            @include colors("cw", #f05b4f);
-            @include colors("hl", #f4c63d);
-            @include colors("aab", #d17905);
+            @include colors("a", "aab", #F59308);
+            @include colors("b", "aian", #3C69C7);
+            @include colors("c", "api", #3FDEDE);
+            @include colors("d", "cw", #FFC0CB);
+            @include colors("e", "hl", #28B728);
 
             list-style: none;
             position: relative;

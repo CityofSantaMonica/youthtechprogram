@@ -2,7 +2,7 @@
     <div class="item {% if forloop.first %}active{% endif %}">
         <div class="row">
             <div class="col-md-4">
-                <div id="{{ stat.name }}-chart" class="stat-chart"></div>
+                <div id="{{ stat.name }}-chart" class="stat-chart {{ stat.name }}-chart"></div>
             </div>
 
             <div class="col-md-8 blackboard">

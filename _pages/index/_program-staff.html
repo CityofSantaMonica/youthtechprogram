@@ -2,13 +2,18 @@
     <div class="container">
         <div class="blackboard">
             <h2 class="section-header">Program Staff</h2>
+            <h3>Our alumni have joined the team</h3>
         </div>
 
         <div class="staff-roster row">
             {% for staff in site.data.staff %}
                 <div class="staff col-xs-6 col-sm-4 col-md-3">
-                    <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.png" alt="{{ staff.name }}'s picture" />
-                    <p class="name">{{ staff.name }}</p>
+                    {% if staff.name %}
+                        <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.png" alt="{{ staff.name }}'s picture" />
+                        <p class="name">{{ staff.name }}</p>
+                    {% else %}
+                        <img src="http://placehold.it/100x100?text=%20" alt="">
+                    {% endif %}
                     <p class="position">{{ staff.position }}</p>
                 </div>
             {% endfor %}

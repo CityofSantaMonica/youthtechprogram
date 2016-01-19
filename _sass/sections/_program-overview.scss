@@ -12,10 +12,13 @@ $icons: (
     }
 
     .canvas {
-        margin-top: -20px;
-
         .actor {
+            height: 140px;
             text-align: center;
+
+            @include respond-to(sm) {
+                height: auto;
+            }
 
             img {
                 border-radius: 50%;

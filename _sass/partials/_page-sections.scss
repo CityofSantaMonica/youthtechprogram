@@ -10,10 +10,10 @@
     &:first-child {
         padding-top: $height - 30;
     }
-}
 
-.page-section--alt {
-    background-color: $ytp-light;
+    &:nth-child(even) {
+        background-color: $ytp-light;
+    }
 }
 
 .section-header {
