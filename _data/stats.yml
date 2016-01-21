@@ -66,11 +66,17 @@
 - name: growth
   type:
     primary: line
-    secondary: percent
+    secondary: nohigh
   title: Program growth
   slug: Look how far we’ve come
   content: >
     Our program has grown from 13 participants in 2012 to having 35 participants 2015.
+
+    <ul class="chart-legend row">
+        <li class="col-xs-12 col-sm-6 ct-series-a">Total Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">Male Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-c">Female Participation</li>
+    </ul>
   data:
     labels:
       - 2012
@@ -78,11 +84,21 @@
       - 2014
       - 2015
     series:
-      -
+      - # Total
         - 13
         - 8
         - 25
         - 35
+      - # Male
+        - 11
+        - 7
+        - 20
+        - 19
+      - # Female
+        - 2
+        - 1
+        - 5
+        - 16
 
 - name: ethnicity
   type:
@@ -95,7 +111,7 @@
 
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">2015 Participants</li>
-        <li class="col-xs-12 col-sm-6 ct-series-b">Santa Monica Population: Census 2010</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">Reference Census 2010</li>
     </ul>
   data:
     labels:
