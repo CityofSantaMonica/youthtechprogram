@@ -15,6 +15,13 @@
                         <img src="http://placehold.it/100x100?text=%20" alt="">
                     {% endif %}
                     <p class="position">{{ staff.position }}</p>
+                    <p class="year">
+                        {% if staff.year %}
+                            {{ staff.year }}
+                        {% else %}
+                            &nbsp;
+                        {% endif %}
+                    </p>
                 </div>
             {% endfor %}
         </div>

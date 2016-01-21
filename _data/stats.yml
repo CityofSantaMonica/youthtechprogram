@@ -22,7 +22,8 @@
   title: Internship Placement
   slug: This is a flatline we love
   content: >
-    100% of our eligible alumni, alumni in college for at least a year, have been accepted to internships at awesome places such as Sony, Favrit, and Lionsgate.
+    100% of our eligible alumni, alumni in college for at least a year, have been accepted to internships at awesome
+    places such as Sony Computer Entertainment Worldwide Studios, Lionsgate Entertainment, Wayfair, Favrit, and many more!
   data:
     labels:
       - 2012
@@ -65,6 +66,7 @@
 - name: growth
   type:
     primary: line
+    secondary: percent
   title: Program growth
   slug: Look how far we’ve come
   content: >
@@ -123,10 +125,10 @@
   type:
     primary: pie
     secondary: special
-  title: 2015 Santa Monica Neighborhood Breakdown
+  title: 2015 Santa Monica Neighborhood Participation
   slug: Working together as a community
   content: >
-    Students from neighboring areas work together to launch their start-ups.
+    Students from a;; neighborhoods work together to launch their start-ups.
 
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">Friends of Sunset Park</li>
