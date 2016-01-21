@@ -17,11 +17,20 @@
     margin-bottom: 30px;
     position: relative;
 
+    .ytp-logo,
     .city-logo {
         position: absolute;
-        right: $spacing-vertical-small;
         top: $spacing-vertical-small;
         z-index: 10;
+    }
+
+    .ytp-logo {
+        color: $color-white;
+        left: $spacing-vertical-small;
+    }
+
+    .city-logo {
+        right: $spacing-vertical-small;
     }
 
     .navbar {
@@ -43,12 +52,12 @@
                 height: 100%;
             }
         }
+    }
 
-        h1, h2, h3,
-        h4, h5, h6,
-        p, span {
-            text-shadow: 0 1px 10px #000, 0 0 30px #000;
-        }
+    h1, h2, h3,
+    h4, h5, h6,
+    p, span {
+        text-shadow: 0 1px 10px #000, 0 0 30px #000;
     }
 }
 

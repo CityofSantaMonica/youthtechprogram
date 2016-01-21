@@ -122,6 +122,7 @@
 - name: neighborhood
   type:
     primary: pie
+    secondary: special
   title: 2015 Santa Monica Neighborhood Breakdown
   slug: Working together as a community
   content: >

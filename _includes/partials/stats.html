@@ -43,7 +43,12 @@
     var PieOptions = {
         height: 200,
         width: 200,
-        showLabel: false
+        showLabel: true
+    };
+    var PieSpecialOptions = {
+        labelInterpolationFnc: function(value) {
+            return value === 0 ? "" : Math.floor(value/35 * 100) + "%";
+        }
     };
     var BarOptions = {
         height: 200,

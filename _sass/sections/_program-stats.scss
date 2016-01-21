@@ -34,9 +34,17 @@ $controlWidth: 7%;
     }
 
     .stat-chart {
-        height: 200px;
+        height: 250px;
         margin-bottom: 15px;
         text-align: center;
+    }
+}
+
+.neighborhood-chart {
+    .ct-label {
+        color: #FFF;
+        fill: #FFF;
+        font-size: 0.85em;
     }
 }
 
