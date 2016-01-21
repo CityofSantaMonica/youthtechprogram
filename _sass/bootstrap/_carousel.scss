@@ -12,6 +12,7 @@
     @include responsive-carousel(xs, 400px);
     @include responsive-carousel(sm, 450px);
     @include responsive-carousel(md, 600px);
+    @include responsive-carousel(lg, 650px);
 
     margin-bottom: 30px;
     position: relative;

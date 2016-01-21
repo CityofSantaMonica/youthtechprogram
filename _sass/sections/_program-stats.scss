@@ -1,4 +1,4 @@
-$controlWidth: 10%;
+$controlWidth: 7%;
 
 .program-statistics {
     .carousel {
@@ -12,7 +12,7 @@ $controlWidth: 10%;
         }
 
         .item {
-            .row {
+            > .row {
                 // Hard code this value to prevent the page from shifting on mobile
                 height: 550px;
 
@@ -67,7 +67,7 @@ $controlWidth: 10%;
     @return str-slice($alphabet, $number, $number);
 }
 
-$chart-series: #1abc9c, #4aa3df, #9b59b6, #f39c12, #e74c3c, #bdc3c7, #34495e;
+$chart-series: #1abc9c, #9b59b6, #4aa3df, #f39c12, #e74c3c, #bdc3c7, #34495e;
 
 @for $i from 1 through length($chart-series) {
     $series: num-to-letter($i);

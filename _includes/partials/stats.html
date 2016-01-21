@@ -1,11 +1,11 @@
 {% for stat in site.data.stats %}
     <div class="item {% if forloop.first %}active{% endif %}">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-lg-6">
                 <div id="{{ stat.name }}-chart" class="stat-chart {{ stat.name }}-chart"></div>
             </div>
 
-            <div class="col-md-8 blackboard">
+            <div class="col-lg-6 blackboard">
                 <h2 class="section-header">{{ stat.title }}</h2>
                 <h3>{{ stat.slug }}</h3>
 
@@ -22,7 +22,7 @@
 <script>
     var LineOptions = {
         height: 200,
-        width: 300,
+        width: 400,
         fullWidth: true,
         lineSmooth: false,
         chartPadding: {
@@ -47,13 +47,11 @@
     };
     var BarOptions = {
         height: 200,
-        width: 300,
-        horizontalBars: true,
-        stackBars: true,
+        width: 450,
         high: 100
     };
     var BarPercentOptions = $.extend({}, BarOptions, {
-        axisX: {
+        axisY: {
             onlyInteger: true,
             labelInterpolationFnc: function(value) {
               return value + '%';
