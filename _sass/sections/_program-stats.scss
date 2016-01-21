@@ -57,32 +57,37 @@ $controlWidth: 10%;
     }
 }
 
-$chart-series: (
-  a: #1abc9c,
-  b: #4aa3df,
-  c: #9b59b6,
-  d: #f39c12,
-  e: #e74c3c,
-  f: #bdc3c7,
-  g: #34495e,
-);
+@function num-to-letter($number) {
+    $alphabet: abcdefghijklmnopqrstuvwxyz;
 
-@each $series, $color in $chart-series {
-  .chart-legend {
-    .ct-series-#{$series}:before {
-      background-color: $color;
+    @if $number <= 0 {
+      @error "Zero or negative numbers do not work";
     }
-  }
 
-  .ct-series-#{$series} .ct-area,
-  .ct-series-#{$series} .ct-slice-pie {
-      fill: $color;
-  }
+    @return str-slice($alphabet, $number, $number);
+}
 
-  .ct-series-#{$series} .ct-bar,
-  .ct-series-#{$series} .ct-line,
-  .ct-series-#{$series} .ct-point,
-  .ct-series-#{$series} .ct-slice-donut {
-    stroke: $color;
-  }
+$chart-series: #1abc9c, #4aa3df, #9b59b6, #f39c12, #e74c3c, #bdc3c7, #34495e;
+
+@for $i from 1 through length($chart-series) {
+    $series: num-to-letter($i);
+    $color: nth($chart-series, $i);
+
+    .chart-legend {
+        .ct-series-#{$series}:before {
+            background-color: $color;
+        }
+    }
+
+    .ct-series-#{$series} .ct-area,
+    .ct-series-#{$series} .ct-slice-pie {
+        fill: $color;
+    }
+
+    .ct-series-#{$series} .ct-bar,
+    .ct-series-#{$series} .ct-line,
+    .ct-series-#{$series} .ct-point,
+    .ct-series-#{$series} .ct-slice-donut {
+        stroke: $color;
+    }
 }
