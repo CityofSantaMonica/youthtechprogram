@@ -86,17 +86,17 @@
   type:
     primary: line
     secondary: percent
-  title: Race/Ethnicity Stats
-  slug: Maintaining a diverse environment
+  title: 2015 Race/Ethnicity Stats
+  slug: Focusing on diversity
   content: >
     High school students from all backgrounds are working together to successfully create start-ups.
 
-    <ul class="ethnicity-legend row">
-        <li class="col-xs-12 col-sm-6 aab">African American/Black</li>
-        <li class="col-xs-12 col-sm-6 aian">American Indian/Alaskan Native</li>
-        <li class="col-xs-12 col-sm-6 api">Asian/Pacific Islander</li>
-        <li class="col-xs-12 col-sm-6 cw">Caucasian/White</li>
-        <li class="col-xs-12 col-sm-6 hl">Hispanic/Latino</li>
+    <ul class="chart-legend row">
+        <li class="col-xs-12 col-sm-6 ct-series-a">African American/Black</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">American Indian/Alaskan Native</li>
+        <li class="col-xs-12 col-sm-6 ct-series-c">Asian/Pacific Islander</li>
+        <li class="col-xs-12 col-sm-6 ct-series-d">Caucasian/White</li>
+        <li class="col-xs-12 col-sm-6 ct-series-e">Hispanic/Latino</li>
     </ul>
   data:
     labels:
@@ -106,10 +106,10 @@
       - 2015
     series:
       - # African American/Black
-        - 7.69
-        - 0
-        - 16
-        - 17.14
+        - 7.69  # 2012
+        - 0     # 2013
+        - 16    # 2014
+        - 17.14 # 2015
       - # American Indian/Alaskan Native
         - 0
         - 0
@@ -130,3 +130,30 @@
         - 25
         - 16
         - 22.86
+
+- name: neighborhood
+  type:
+    primary: pie
+  title: 2015 Santa Monica Neighborhood Breakdown
+  slug: Working together as a community
+  content: >
+    Students from neighboring areas work together to launch their start-ups
+
+    <ul class="chart-legend row">
+        <li class="col-xs-12 col-sm-6 ct-series-a">Friends of Sunset Park</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">North of Montana Association</li>
+        <li class="col-xs-12 col-sm-6 ct-series-c">Northeast Neighbors Association</li>
+        <li class="col-xs-12 col-sm-6 ct-series-d">Ocean Park Association</li>
+        <li class="col-xs-12 col-sm-6 ct-series-e">Pico Neighborhood</li>
+        <li class="col-xs-12 col-sm-6 ct-series-f">Santa Monica Mid-City Neighbors</li>
+        <li class="col-xs-12 col-sm-6 ct-series-g">Wilshire/Montana Neighborhood</li>
+    </ul>
+  data:
+    series:
+      - 4  # Friends of Sunset Park
+      - 3  # North of Montana Association
+      - 0  # Northeast Neighbors Association
+      - 5  # Ocean Park Association
+      - 9  # Pico Neighborhood
+      - 2  # Santa Monica Mid-City Neighbors
+      - 12 # Wilshire/Montana Neighborhood

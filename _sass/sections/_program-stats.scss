@@ -1,22 +1,3 @@
-@mixin colors($series, $class, $color) {
-    @at-root {
-        .ethnicity-chart {
-            .ct-series-#{$series} .ct-bar,
-            .ct-series-#{$series} .ct-line,
-            .ct-series-#{$series} .ct-point,
-            .ct-series-#{$series} .ct-slice-donut {
-                stroke: $color;
-            }
-        }
-    }
-
-    &.#{$class} {
-        &:before {
-            background-color: $color;
-        }
-    }
-}
-
 $controlWidth: 10%;
 
 .program-statistics {
@@ -57,27 +38,51 @@ $controlWidth: 10%;
         margin-bottom: 15px;
         text-align: center;
     }
+}
 
-    .ethnicity-legend {
-        li {
-            @include colors("a", "aab", #F59308);
-            @include colors("b", "aian", #3C69C7);
-            @include colors("c", "api", #3FDEDE);
-            @include colors("d", "cw", #FFC0CB);
-            @include colors("e", "hl", #28B728);
+.chart-legend {
+    li {
+        list-style: none;
+        position: relative;
 
-            list-style: none;
-            position: relative;
-
-            &:before {
-                content: '';
-                display: block;
-                height: 10px;
-                left: -5px;
-                position: absolute;
-                top: 5px;
-                width: 10px;
-            }
+        &:before {
+            content: '';
+            display: block;
+            height: 10px;
+            left: -5px;
+            position: absolute;
+            top: 5px;
+            width: 10px;
         }
     }
+}
+
+$chart-series: (
+  a: #1abc9c,
+  b: #4aa3df,
+  c: #9b59b6,
+  d: #f39c12,
+  e: #e74c3c,
+  f: #bdc3c7,
+  g: #34495e,
+);
+
+@each $series, $color in $chart-series {
+  .chart-legend {
+    .ct-series-#{$series}:before {
+      background-color: $color;
+    }
+  }
+
+  .ct-series-#{$series} .ct-area,
+  .ct-series-#{$series} .ct-slice-pie {
+      fill: $color;
+  }
+
+  .ct-series-#{$series} .ct-bar,
+  .ct-series-#{$series} .ct-line,
+  .ct-series-#{$series} .ct-point,
+  .ct-series-#{$series} .ct-slice-donut {
+    stroke: $color;
+  }
 }
