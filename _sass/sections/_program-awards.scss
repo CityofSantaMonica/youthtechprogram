@@ -1,5 +1,13 @@
 .program-awards {
     .trophy-case {
+        @include siblingsCount(odd, ".award") {
+            &:last-child {
+                @include respond-to(md) {
+                    margin-left: 25%;
+                }
+            }
+        }
+
         .award {
             .image {
                 display: table;
