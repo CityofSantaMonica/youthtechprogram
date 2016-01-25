@@ -22,8 +22,8 @@
   title: Internship Placement
   slug: This is a flatline we love
   content: >
-    100% of our eligible alumni, alumni in college for at least a year, have been accepted to internships at awesome
-    places such as Sony Computer Entertainment Worldwide Studios, Lionsgate Entertainment, Wayfair, Favrit, and many more!
+    100% of our active alumni attending college, have been accepted to internships at awesome places such as Sony Computer
+    Entertainment, Lionsgate Entertainment, Wayfair, Favrit, and many more!
   data:
     labels:
       - 2012
@@ -50,6 +50,11 @@
   slug: Closing the gender gap in the technology workforce
   content: >
     In the 2015 program, we reached an all-time high of 45.7% female participation.
+
+    <ul class="chart-legend row">
+        <li class="col-xs-12 col-sm-6 ct-series-a">Female Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">Male Participation</li>
+     </ul>
   data:
     labels:
       - 2012
@@ -62,6 +67,11 @@
         - 12.50
         - 20
         - 45.71
+      -
+        - 84.62
+        - 87.50
+        - 80
+        - 54.29
 
 - name: growth
   type:
@@ -107,11 +117,14 @@
   title: 2015 Race/Ethnicity Stats
   slug: Focusing on diversity
   content: >
-    High school students from all backgrounds are working together to successfully create start-ups.
+    High school students from all backgrounds are working together to successfully create Startups.
 
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">2015 Youth Tech Participants</li>
-        <li class="col-xs-12 col-sm-6 ct-series-b">Reference Census 2010</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">
+            Santa Monica Population <br/>
+            <span style="display: block; font-size: 9px; margin-top: 0;">U.S. Census Bureau (2010)</span>
+        </li>
     </ul>
   data:
     labels:
@@ -141,10 +154,10 @@
   type:
     primary: pie
     secondary: special
-  title: 2015 Santa Monica Neighborhood Participation
+  title: 2015 Neighborhood Participation
   slug: Working together as a community
   content: >
-    Students from a;; neighborhoods work together to launch their start-ups.
+    Students from all neighborhoods work together to launch their Startups.
 
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">Friends of Sunset Park</li>
