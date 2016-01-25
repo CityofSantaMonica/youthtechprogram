@@ -1,4 +1,4 @@
-$controlWidth: 7%;
+$controlWidth: 0; // For arrows, it was 7%
 
 .program-statistics {
     .carousel {
@@ -29,6 +29,19 @@ $controlWidth: 7%;
         .bottom-carousel-control {
             @include respond-to(ms) {
                 display: none;
+            }
+        }
+    }
+
+    .carousel-indicators {
+        bottom: 0;
+
+        li {
+            background-color: mix(black, $ytp-light, 20%);
+            border: none;
+
+            &.active {
+                background-color: $ytp-secondary;
             }
         }
     }

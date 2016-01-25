@@ -22,7 +22,7 @@
 <script>
     var LineOptions = {
         height: 200,
-        width: 400,
+        width: 450,
         high: 100,
         low: 0,
         fullWidth: true,
@@ -57,9 +57,11 @@
     };
     var BarOptions = {
         height: 200,
-        width: 450,
-        high: 100
+        width: 450
     };
+    var BarStackedOptions = $.extend({}, BarOptions, {
+        stackBars: true
+    });
     var BarPercentOptions = $.extend({}, BarOptions, {
         axisY: {
             onlyInteger: true,

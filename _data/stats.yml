@@ -22,8 +22,7 @@
   title: Internship Placement
   slug: This is a flatline we love
   content: >
-    100% of our active alumni attending college, have been accepted to internships at awesome places such as Sony Computer
-    Entertainment, Lionsgate Entertainment, Wayfair, Favrit, and many more!
+    100% of our active alumni attending college, have been accepted to internships at awesome places such as Sony Computer Entertainment, Lionsgate Entertainment, Wayfair, Favrit, and many more!
   data:
     labels:
       - 2012
@@ -75,17 +74,16 @@
 
 - name: growth
   type:
-    primary: line
-    secondary: nohigh
+    primary: bar
+    secondary: stacked
   title: Program growth
   slug: Look how far we’ve come
   content: >
     Our program has grown from 13 participants in 2012 to having 35 participants 2015.
 
     <ul class="chart-legend row">
-        <li class="col-xs-12 col-sm-6 ct-series-a">Total Participation</li>
-        <li class="col-xs-12 col-sm-6 ct-series-b">Male Participation</li>
-        <li class="col-xs-12 col-sm-6 ct-series-c">Female Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-a">Male Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">Female Participation</li>
     </ul>
   data:
     labels:
@@ -94,11 +92,6 @@
       - 2014
       - 2015
     series:
-      - # Total
-        - 13
-        - 8
-        - 25
-        - 35
       - # Male
         - 11
         - 7
