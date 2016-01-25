@@ -34,7 +34,7 @@ $controlWidth: 0; // For arrows, it was 7%
     }
 
     .carousel-indicators {
-        bottom: 0;
+        bottom: -20px;
 
         li {
             background-color: mix(black, $ytp-light, 20%);

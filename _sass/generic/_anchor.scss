@@ -1,0 +1,14 @@
+a {
+    position: relative;
+
+    &.external {
+        &:after {
+            content: '\f017';
+            font-family: DefaultKit;
+            font-size: 10px;
+            position: absolute;
+            right: -15px;
+            top: 0;
+        }
+    }
+}
