@@ -95,7 +95,7 @@ jumbotron:
 
             {% if include.jumbotron.button %}
                 <p>
-                    <a class="btn btn-primary" href="{{ include.jumbotron.button.url }}" role="button">
+                    <a class="btn btn-primary" href="{{ include.jumbotron.button.url }}" target="_blank" role="button">
                         {{ include.jumbotron.button.text }}
                     </a>
                 </p>
@@ -116,7 +116,7 @@ jumbotron:
 
                         {% if slide.button %}
                             <p>
-                                <a class="btn btn-primary" href="{{ slide.button.url }}" role="button">
+                                <a class="btn btn-primary" href="{{ slide.button.url }}" target="_blank" role="button">
                                     {{ slide.button.text }}
                                 </a>
                             </p>
