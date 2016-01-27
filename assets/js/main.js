@@ -28,11 +28,6 @@ $(document).ready(function () {
 
     $('[data-toggle="tooltip"]').tooltip();
 
-    $('#upcoming-events a').click(function (e) {
-        e.preventDefault();
-        $(this).tab('show');
-    });
-
     $(".js-event").each(function (e) {
         var $this = $(this);
         var now = new Date();
