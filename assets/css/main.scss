@@ -21,13 +21,14 @@
 @import 'partials/photo';
 @import 'partials/footer';
 
-@import 'sections/program-overview';
-@import 'sections/application-process';
-@import 'sections/upcoming-events';
-@import 'sections/program-stats';
-@import 'sections/past-companies';
-@import 'sections/program-staff';
-@import 'sections/quotes-section';
-@import 'sections/program-awards';
+@import 'pages/index/program-overview';
+@import 'pages/index/eligibility';
+@import 'pages/index/application-process';
+@import 'pages/index/upcoming-events';
+@import 'pages/index/program-stats';
+@import 'pages/index/past-companies';
+@import 'pages/index/program-staff';
+@import 'pages/index/quotes-section';
+@import 'pages/index/program-awards';
 
 @import 'partials/cursor';

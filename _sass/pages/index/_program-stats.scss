@@ -1,0 +1,124 @@
+$controlWidth: 0; // For arrows, it was 7%
+
+.program-statistics {
+    .carousel {
+        .carousel-control {
+            display: none;
+
+            @include respond-to(ms) {
+                display: block;
+                width: $controlWidth;
+            }
+        }
+
+        .item {
+            > .row {
+                // Hard code this value to prevent the page from shifting on mobile
+                height: 550px;
+
+                @include respond-to(ms) {
+                    height: auto;
+                    padding: {
+                        left: $controlWidth;
+                        right: $controlWidth;
+                    }
+                }
+            }
+        }
+
+        .bottom-carousel-control {
+            @include respond-to(ms) {
+                display: none;
+            }
+        }
+    }
+
+    .carousel-indicators {
+        bottom: -20px;
+
+        li {
+            background-color: mix(black, $ytp-light, 20%);
+            border: none;
+
+            &.active {
+                background-color: $ytp-secondary;
+            }
+        }
+    }
+
+    .stat-chart {
+        height: 250px;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
+
+.ct-grid {
+    stroke: rgba(0, 0, 0, 0.5);
+}
+
+.ct-label {
+    color: rgba(0, 0, 0, 0.76);
+    fill: rgba(0, 0, 0, 0.76);
+    font-size: 8px;
+}
+
+.neighborhood-chart {
+    .ct-label {
+        color: #FFF;
+        fill: #FFF;
+        font-size: 0.85em;
+    }
+}
+
+.chart-legend {
+    li {
+        list-style: none;
+        position: relative;
+
+        &:before {
+            content: '';
+            display: block;
+            height: 10px;
+            left: -5px;
+            position: absolute;
+            top: 5px;
+            width: 10px;
+        }
+    }
+}
+
+@function num-to-letter($number) {
+    $alphabet: abcdefghijklmnopqrstuvwxyz;
+
+    @if $number <= 0 {
+      @error "Zero or negative numbers do not work";
+    }
+
+    @return str-slice($alphabet, $number, $number);
+}
+
+$chart-series: #1abc9c, #9b59b6, #4aa3df, #f39c12, #e74c3c, #bdc3c7, #34495e;
+
+@for $i from 1 through length($chart-series) {
+    $series: num-to-letter($i);
+    $color: nth($chart-series, $i);
+
+    .chart-legend {
+        .ct-series-#{$series}:before {
+            background-color: $color;
+        }
+    }
+
+    .ct-series-#{$series} .ct-area,
+    .ct-series-#{$series} .ct-slice-pie {
+        fill: $color;
+    }
+
+    .ct-series-#{$series} .ct-bar,
+    .ct-series-#{$series} .ct-line,
+    .ct-series-#{$series} .ct-point,
+    .ct-series-#{$series} .ct-slice-donut {
+        stroke: $color;
+    }
+}
