@@ -115,7 +115,7 @@
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">2015 Youth Tech Participants</li>
         <li class="col-xs-12 col-sm-6 ct-series-b">
-            Santa Monica Population <br/>
+            Santa Monica Population Distribution <br/>
             <span style="display: block; font-size: 9px; margin-top: 0;">U.S. Census Bureau (2010)</span>
         </li>
     </ul>
