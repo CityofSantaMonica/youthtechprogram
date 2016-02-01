@@ -18,7 +18,7 @@ $(document).ready(function () {
     $.getJSON(baseurl + "/assets/data/quotes.json", function (d) {
         var now = new Date();
         var quoteCard = Handlebars.compile($("#quote-card-template").html());
-        var quoteBlock = (now.getMonth() <= d.length) ? now.getMonth() : now.getMonth() % d.length;
+        var quoteBlock = (now.getMonth() < d.length) ? now.getMonth() : now.getMonth() % d.length;
         var compiled = quoteCard({ quotes: d[quoteBlock] });
 
         $("#quotebook").html(compiled);
