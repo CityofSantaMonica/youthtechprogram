@@ -80,6 +80,19 @@
         }
     }
 
+    &.green-indicators {
+        .carousel-indicators {
+            li {
+                background-color: mix(black, $ytp-light, 20%);
+                border: none;
+
+                &.active {
+                    background-color: $ytp-secondary;
+                }
+            }
+        }
+    }
+
     .bottom-carousel-control {
         .left {
             text-align: right;

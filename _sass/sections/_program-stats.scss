@@ -35,15 +35,6 @@ $controlWidth: 0; // For arrows, it was 7%
 
     .carousel-indicators {
         bottom: -20px;
-
-        li {
-            background-color: mix(black, $ytp-light, 20%);
-            border: none;
-
-            &.active {
-                background-color: $ytp-secondary;
-            }
-        }
     }
 
     .stat-chart {

@@ -1,0 +1,11 @@
+{% for slide in site.data.partners %}
+    <div class="item {% if forloop.first %}active{% endif %}">
+        <div class="partner-grid">
+            {% for partner in slide %}
+                <div class="partner">
+                    <img src="{{ '/assets/images/partners/' | prepend: site.baseurl }}{{ partner | replace: ' ', '_' }}.png" alt="{{ partner }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endfor %}

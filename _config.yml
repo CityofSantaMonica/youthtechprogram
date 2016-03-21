@@ -34,9 +34,6 @@ collections:
   - alum_quotes
   - awards
 
-# Build settings
-markdown: redcarpet
-
 gems:
   - jekyll-redirect-from
   - jekyll-sitemap

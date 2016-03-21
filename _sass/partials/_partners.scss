@@ -1,0 +1,22 @@
+$_spacing: 40px;
+
+.program-partners {
+    margin-bottom: $_spacing;
+
+    .carousel-indicators {
+        bottom: -1 * $_spacing;
+    }
+}
+
+.partner-grid {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.partner {
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 15px;
+}
