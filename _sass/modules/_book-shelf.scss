@@ -1,0 +1,45 @@
+.shelf-container {
+    .shelf {
+        margin-bottom: $spacing-vertical;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.shelf {
+    display: block;
+    width: 100%;
+
+    @include respond-to(sm) {
+        display: table;
+    }
+
+    .shelf-image,
+    .shelf-content {
+        @include respond-to(sm) {
+            display: table-cell;
+            vertical-align: top;
+        }
+    }
+
+    h4 {
+        margin-top: 0;
+    }
+
+    .shelf-image {
+        margin-bottom: $spacing-vertical-small;
+        padding-right: $spacing-vertical-small;
+        text-align: center;
+
+        @include respond-to(sm) {
+            margin-bottom: 0;
+            text-align: right;
+        }
+    }
+
+    .shelf-content {
+        width: 100%;
+    }
+}

@@ -1,10 +1,4 @@
-$icons: (
-    chat: Chat,
-    rocket: Rocket,
-    gears: Gears,
-    chemistry: Chemistry,
-    supergirl: Supergirl
-);
+$icons: chat, rocket, gears, chemistry, supergirl;
 
 .program-overview {
     .blackboard {
@@ -18,12 +12,6 @@ $icons: (
 
             @include respond-to(sm) {
                 height: auto;
-            }
-
-            img {
-                border-radius: 50%;
-                margin-bottom: 10px;
-                width: 100px;
             }
 
             p {
@@ -43,12 +31,14 @@ $icons: (
                     width: 130px;
                 }
 
-                @each $class, $icon in $icons {
+                @each $class in $icons {
+                    $_iconFile: to-upper-case(str-slice($class, 1, 1)) + str-slice($class, 2);
+
                     &.#{$class} {
-                        background-image: url('../images/icons/#{$icon}.png');
+                        background-image: url('../images/icons/#{$_iconFile}.png');
 
                         &:hover {
-                            background-image: url('../images/icons/#{$icon}-Active.png');
+                            background-image: url('../images/icons/#{$_iconFile}-Active.png');
                         }
                     }
                 }
