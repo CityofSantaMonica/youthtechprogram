@@ -12,8 +12,6 @@ $_spacing: 40px;
     align-items: center;
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
 }
 
 .partner {
@@ -24,13 +22,5 @@ $_spacing: 40px;
     @include respond-to(md) {
         flex-basis: 50%;
         max-width: 50%;
-    }
-
-    @include siblingsCountAbsolute(odd, #{&}) {
-        &:last-child {
-            @include respond-to(md) {
-                margin-left: 25%;
-            }
-        }
     }
 }
