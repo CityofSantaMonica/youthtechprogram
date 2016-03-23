@@ -8,6 +8,16 @@
     }
 }
 
+.flex-grid-carousel {
+    .carousel-inner {
+        display: flex;
+    }
+
+    .item {
+        width: 100%;
+    }
+}
+
 .header-carousel {
     @include responsive-carousel(xs, 400px);
     @include responsive-carousel(sm, 450px);

@@ -7,8 +7,24 @@ function randomSorter() {
     }
 }
 
-Date.prototype.addDays = function(days)
-{
+function resizeCarousel() {
+    $(".flex-grid-carousel").each(function () {
+        var items = $(this).find(".item");
+        var heights = items.map(function () {
+            var $this = $(this);
+            $this.height('auto');
+
+            return $this.height();
+        });
+        var maxHeight = Math.max.apply(null, heights);
+
+        items.each(function () {
+            $(this).height(maxHeight);
+        });
+    });
+}
+
+Date.prototype.addDays = function(days) {
     var dat = new Date(this.valueOf());
     dat.setDate(dat.getDate() + days);
     return dat;
@@ -26,6 +42,8 @@ $(document).ready(function () {
         randomSorter();
     });
 
+    resizeCarousel();
+
     $('[data-toggle="tooltip"]').tooltip();
 
     $(".js-event").each(function (e) {
@@ -36,5 +54,9 @@ $(document).ready(function () {
         if (date.getTime() <= now) {
             $this.hide();
         }
+    });
+
+    $(window).resize(function() {
+        resizeCarousel();
     });
 });
