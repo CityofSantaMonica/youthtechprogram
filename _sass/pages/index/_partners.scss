@@ -6,12 +6,28 @@ $_spacing: 40px;
     .carousel-indicators {
         bottom: -1 * $_spacing;
     }
+
+    .item.left,
+    .item.right,
+    .item.active {
+        align-items: center;
+        display: flex;
+    }
 }
 
 .partner-grid {
     align-items: center;
     display: flex;
     flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+@mixin column($viewsize, $columns) {
+    @include respond-to($viewsize) {
+        flex-basis: ($columns / 12) * 100%;
+        max-width: ($columns / 12) * 100%;
+    }
 }
 
 .partner {
@@ -19,9 +35,12 @@ $_spacing: 40px;
     max-width: 100%;
     padding: 15px;
 
-    @include respond-to(md) {
-        flex-basis: 50%;
-        max-width: 50%;
+    @each $bp in map_keys($breakpoints) {
+        @for $i from 1 through 12 {
+            &.partner-#{$bp}-#{$i} {
+                @include column($bp, $i);
+            }
+        }
     }
 
     @include siblingsCountAbsolute(odd, #{&}) {

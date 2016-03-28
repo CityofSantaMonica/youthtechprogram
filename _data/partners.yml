@@ -1,50 +1,70 @@
 -
   - name: Lionsgate
     link: https://www.lionsgate.com/
+    classes: partner-sm-6
   - name: UCLA Anderson School of Management
     link: http://www.anderson.ucla.edu/
+    classes: partner-sm-6
   - name: Hulu
     link: http://www.hulu.com/
+    classes: partner-sm-6
   - name: Samsung
     link: http://www.samsung.com/us/
+    classes: partner-sm-6
 -
   - name: Coloft
     link: http://coloft.com/
+    classes: partner-sm-6
   - name: ROC
     link: http://realofficecenters.com/
+    classes: partner-sm-6
   - name: Santa Monica CityNet
     link: http://smcitynet.com/
 -
   - name: Leanometry
     link: http://leanometry.com/
+    classes: partner-sm-6
   - name: Finien
     link: http://www.finien.com/
+    classes: partner-sm-6
   - name: DTE Media
     link: http://dtemedia.com/
+    classes: partner-xs-6
   - name: O2Max
     link: http://www.o2maxfitness.com/
+    classes: partner-xs-6
 -
   - name: CallFire
     link: https://www.callfire.com/
+    classes: partner-sm-6
   - name: Bloc
     link: http://bbloc.co/
+    classes: partner-sm-6
   - name: Expert Dojo
     link: http://expertdojo.com/
+    classes: partner-sm-6
   - name: Prototype Industries
     link: http://www.prototypeindustries.com/
+    classes: partner-sm-6
 -
   - name: Santa Monica Malibu Schools
     link: http://www.smmusd.org/
   - name: St. Monica Catholic High School
     link: http://www.stmonicachs.org/
+    classes: partner-xs-6 partner-sm-4
   - name: Pacifica Christian High School
     link: http://www.pacificachristian.org/
+    classes: partner-xs-6 partner-sm-4
   - name: Crossroads School
     link: http://www.xrds.org/
+    classes: partner-sm-4
 -
   - name: Santa Monica Chamber of Commerce
     link: http://smchamber.com/
+    classes: partner-sm-4
   - name: Buy Local Santa Monica
     link: http://www.buylocalsantamonica.com/
+    classes: partner-sm-4
   - name: City of Santa Monica
     link: http://www.smgov.net/
+    classes: partner-sm-4

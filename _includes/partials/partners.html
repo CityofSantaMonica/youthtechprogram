@@ -2,7 +2,7 @@
     <div class="item {% if forloop.first %}active{% endif %}">
         <div class="partner-grid">
             {% for partner in slide %}
-                <div class="partner">
+                <div class="partner {{ partner.classes }} partner-md-6">
                     <a href="{{ partner.link }}" target="_blank">
                         <img class="img-responsive center-block" src="{{ '/assets/images/partners/' | prepend: site.baseurl }}{{ partner.name | replace: ' ', '_' }}.png" alt="{{ partner.name }}">
                     </a>
