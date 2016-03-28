@@ -1,28 +1,50 @@
 -
-  - Lionsgate
-  - UCLA Anderson School of Management
-  - Hulu
-  - Samsung
+  - name: Lionsgate
+    link: https://www.lionsgate.com/
+  - name: UCLA Anderson School of Management
+    link: http://www.anderson.ucla.edu/
+  - name: Hulu
+    link: http://www.hulu.com/
+  - name: Samsung
+    link: http://www.samsung.com/us/
 -
-  - Coloft
-  - ROC
-  - Santa Monica CityNet
+  - name: Coloft
+    link: http://coloft.com/
+  - name: ROC
+    link: http://realofficecenters.com/
+  - name: Santa Monica CityNet
+    link: http://smcitynet.com/
 -
-  - Leanometry
-  - Finien
-  - DTE Media
-  - O2Max
+  - name: Leanometry
+    link: http://leanometry.com/
+  - name: Finien
+    link: http://www.finien.com/
+  - name: DTE Media
+    link: http://dtemedia.com/
+  - name: O2Max
+    link: http://www.o2maxfitness.com/
 -
-  - CallFire
-  - Bloc
-  - Expert Dojo
-  - Prototype Industries
+  - name: CallFire
+    link: https://www.callfire.com/
+  - name: Bloc
+    link: http://bbloc.co/
+  - name: Expert Dojo
+    link: http://expertdojo.com/
+  - name: Prototype Industries
+    link: http://www.prototypeindustries.com/
 -
-  - Santa Monica Malibu Schools
-  - St. Monica Catholic High School
-  - Pacifica Christian High School
-  - Crossroads School
+  - name: Santa Monica Malibu Schools
+    link: http://www.smmusd.org/
+  - name: St. Monica Catholic High School
+    link: http://www.stmonicachs.org/
+  - name: Pacifica Christian High School
+    link: http://www.pacificachristian.org/
+  - name: Crossroads School
+    link: http://www.xrds.org/
 -
-  - Santa Monica Chamber of Commerce
-  - Buy Local Santa Monica
-  - City of Santa Monica
+  - name: Santa Monica Chamber of Commerce
+    link: http://smchamber.com/
+  - name: Buy Local Santa Monica
+    link: http://www.buylocalsantamonica.com/
+  - name: City of Santa Monica
+    link: http://www.smgov.net/

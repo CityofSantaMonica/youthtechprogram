@@ -3,7 +3,9 @@
         <div class="partner-grid">
             {% for partner in slide %}
                 <div class="partner">
-                    <img class="img-responsive center-block" src="{{ '/assets/images/partners/' | prepend: site.baseurl }}{{ partner | replace: ' ', '_' }}.png" alt="{{ partner }}">
+                    <a href="{{ partner.link }}" target="_blank">
+                        <img class="img-responsive center-block" src="{{ '/assets/images/partners/' | prepend: site.baseurl }}{{ partner.name | replace: ' ', '_' }}.png" alt="{{ partner.name }}">
+                    </a>
                 </div>
             {% endfor %}
         </div>
