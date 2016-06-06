@@ -8,11 +8,14 @@
         <div class="staff-roster row">
             {% for staff in site.data.staff %}
                 <div class="staff col-xs-6 col-sm-4 col-md-3">
-                    {% if staff.name %}
-                        <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.png" alt="{{ staff.name }}'s picture" />
-                        <p class="name">{{ staff.name }}</p>
-                    {% else %}
+                    {% if staff.placeholder %}
                         <img src="http://placehold.it/100x100?text=%20" alt="">
+                    {% else %}
+                        <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.jpg" alt="{{ staff.name }}'s picture" />
+                    {% endif %}
+
+                    {% if staff.name %}
+                        <p class="name">{{ staff.name }}</p>
                     {% endif %}
                     <p class="position">{{ staff.position }}</p>
                     <p class="year">
