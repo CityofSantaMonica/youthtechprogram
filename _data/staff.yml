@@ -2,7 +2,7 @@
   position: Program Consultant
 
 - name: Gary Carter
-  position: Program Director
+  position: Founding Program Director
 
 - name: Jamila Haji
   position: Lead Program Specialist
@@ -15,11 +15,11 @@
   position: Networking Instructor
   year: 2013 Alumni
 
-- name: Kevin Grossi
-  position: Coding Instructor
+- name: Vladimir Jimenez
+  position: Lead Coding Instructor
   year: 2012 Alumni
 
-- name: Vladimir Jimenez
+- name: Kevin Grossi
   position: Coding Instructor
   year: 2012 Alumni
 
@@ -27,11 +27,19 @@
   position: Coding Instructor
   year: 2012 Alumni
 
+- name: Kevin Tran
+  position: UI/UX Instructor
+  year: 2014 Alumni
+
 - name: Samantha Hsieh
   position: Lean Start-up Instructor
   year: 2014 Alumni
 
-- name: Kevin Tran
-  position: UI/UX Instructor
-  year: 2014 Alumni
-  placeholder: true
+- name: Victoria Contreras
+  position: Collaboration Instructor
+
+- name: Brownie Sibrian
+  position: Program Specialist
+
+- name: Tawny Payton
+  position: Program Specialist
