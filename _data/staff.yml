@@ -1,3 +1,4 @@
+# First row
 - name: Carla Fantozzi
   position: Program Consultant
 
@@ -11,35 +12,38 @@
 - name: Kenneth Bales
   position: Program Supervisor
 
-- name: Omar De Arcos
-  position: Networking Instructor
-  year: 2013 Alumni
+# Second row
+- name: Tawny Payton
+  position: Program Specialist
+
+- name: Brownie Sibrian
+  position: Program Specialist
+
+- name: Victoria Contreras
+  position: Collaboration Instructor
 
 - name: Vladimir Jimenez
   position: Lead Coding Instructor
   year: 2012 Alumni
 
+# Third row
 - name: Kevin Grossi
   position: Coding Instructor
   year: 2012 Alumni
 
-- name: David Xiao
-  position: Coding Instructor
-  year: 2012 Alumni
-
-- name: Kevin Tran
-  position: UI/UX Instructor
-  year: 2014 Alumni
+- name: Omar De Arcos
+  position: Networking Instructor
+  year: 2013 Alumni
 
 - name: Samantha Hsieh
   position: Lean Start-up Instructor
   year: 2014 Alumni
 
-- name: Victoria Contreras
-  position: Collaboration Instructor
+- name: David Xiao
+  position: Coding Instructor
+  year: 2012 Alumni
 
-- name: Brownie Sibrian
-  position: Program Specialist
-
-- name: Tawny Payton
-  position: Program Specialist
+# Fourth row
+- name: Kevin Tran
+  position: UI/UX Instructor
+  year: 2014 Alumni
