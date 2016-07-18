@@ -2,7 +2,7 @@
 name: >
   Bright Idea: Harvard Kennedy Ash Center for Democratic Governance & Innovation
 year: 2015
-url: http://ash.harvard.edu/bright-ideas-2015
+link: http://ash.harvard.edu/bright-ideas-2015
 image: HarvardAshCenter.png
 ---
 
