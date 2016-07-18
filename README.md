@@ -1,6 +1,6 @@
 # Santa Monica Youth Tech Program
 
-A Jekyll website for the [Youth Tech Program](http://santamonicayouthtech.com/).
+A Jekyll website for the [Youth Tech Program](http://www.santamonicayouthtech.com/).
 
 ## Development
 
