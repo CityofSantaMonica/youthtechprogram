@@ -1,3 +1,4 @@
-<div class="photo">
-    <img src="{{ '/assets/images/' | prepend: site.baseurl }}{{ include.photo }}" alt="{{ include.alt }}">
+<div class="photo {{ include.class }}">
+    <img src="{{ '/assets/images/' | prepend: site.baseurl }}{{ include.photo }}"
+         alt="{{ include.alt }}">
 </div>

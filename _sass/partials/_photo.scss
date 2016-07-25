@@ -12,3 +12,39 @@
         }
     }
 }
+
+.photo-album {
+    display: inline-block;
+    position: relative;
+
+    img {
+        @include respond-to(sm) {
+            width: 360px;
+        }
+
+        @include respond-to(lg) {
+            width: 500px;
+        }
+    }
+
+    .summer-1 {
+        transform: rotate(-2deg);
+        width: 75%;
+
+        @include respond-to(sm) {
+            width: auto;
+        }
+    }
+
+    .summer-2 {
+        margin-top: -40px;
+        transform: rotate(7deg);
+        width: 75%;
+
+        @include respond-to(sm) {
+            margin-left: -60px;
+            margin-top: 0;
+            width: auto;
+        }
+    }
+}
