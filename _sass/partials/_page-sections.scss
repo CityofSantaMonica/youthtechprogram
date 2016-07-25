@@ -7,23 +7,35 @@
     }
     position: relative;
 
-    &:first-child {
-        padding-top: $height - 30;
-    }
-
     &:nth-child(even) {
         background-color: $ytp-light;
     }
 }
 
 .section-header {
-    font-size: 16px;
-    font-weight: bold;
-    margin: {
-        bottom: 5px;
-        top: 0;
+    margin-bottom: $spacing-vertical;
+
+    h2, h3 {
+        text-align: left;
     }
-    text-transform: uppercase;
+
+    h2 {
+        color: $ytp-secondary;
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0;
+        text-transform: uppercase;
+    }
+
+    h3 {
+        color: $ytp-primary;
+        font-family: 'Slabo 27px', serif;
+        font-size: 36px;
+        margin: {
+            bottom: 30px;
+            top: 0;
+        }
+    }
 }
 
 .section-spacer {

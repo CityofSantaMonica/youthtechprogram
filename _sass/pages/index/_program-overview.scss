@@ -1,8 +1,9 @@
 $icons: chat, rocket, gears, chemistry, supergirl;
 
 .program-overview {
-    .blackboard {
-        margin-bottom: $spacing-vertical;
+    .section-header {
+        display: inline-block;
+        margin: 0;
     }
 
     .canvas {

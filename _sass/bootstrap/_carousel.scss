@@ -24,7 +24,7 @@
     @include responsive-carousel(md, 600px);
     @include responsive-carousel(lg, 650px);
 
-    margin-bottom: 30px;
+    margin-bottom: 0;
     position: relative;
 
     .ytp-logo,
