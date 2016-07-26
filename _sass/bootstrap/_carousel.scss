@@ -18,12 +18,7 @@
     }
 }
 
-.header-carousel {
-    @include responsive-carousel(xs, 400px);
-    @include responsive-carousel(sm, 450px);
-    @include responsive-carousel(md, 600px);
-    @include responsive-carousel(lg, 650px);
-
+.banner-header {
     margin-bottom: 0;
     position: relative;
 
@@ -43,10 +38,34 @@
         right: $spacing-vertical-small;
     }
 
+    .image-theater {
+        img {
+            display: block;
+            max-width: 100%;
+        }
+    }
+
     .navbar {
         position: relative;
         z-index: 10;
     }
+
+    .btn {
+        font-size: 130%;
+    }
+
+    h1, h2, h3,
+    h4, h5, h6,
+    p, span {
+        text-shadow: 0 1px 10px #000, 0 0 30px #000;
+    }
+}
+
+.header-carousel {
+    @include responsive-carousel(xs, 400px);
+    @include responsive-carousel(sm, 450px);
+    @include responsive-carousel(md, 600px);
+    @include responsive-carousel(lg, 650px);
 
     .carousel {
         position: absolute;
@@ -62,16 +81,6 @@
                 height: 100%;
             }
         }
-    }
-
-    .btn {
-        font-size: 130%;
-    }
-
-    h1, h2, h3,
-    h4, h5, h6,
-    p, span {
-        text-shadow: 0 1px 10px #000, 0 0 30px #000;
     }
 }
 

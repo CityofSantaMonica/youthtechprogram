@@ -1,0 +1,32 @@
+.ytp-logo {
+    .top {
+        font-size: 24px;
+        font-weight: 100;
+        margin-bottom: 0;
+
+        @include respond-to(sm) {
+            font-size: 28px;
+        }
+    }
+
+    .bottom {
+        color: #A1C435;
+        font-size: 28px;
+        font-weight: 500;
+        line-height: 24px;
+        margin-top: 0;
+
+        @include respond-to(sm) {
+            font-size: 36px;
+            line-height: 20px;
+        }
+    }
+}
+
+.site-header {
+    padding: 15px 0;
+
+    .city-logo img {
+        width: 70px;
+    }
+}

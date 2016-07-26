@@ -1,0 +1,21 @@
+<div class="eligibility page-section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Judges</h2>
+            <h3>Getting Feedback from Investors</h3>
+        </div>
+
+        <section class="row rsorter">
+            {% for judge in site.data.judges %}
+                <article class="col-sm-6 col-md-4 staff-card sortable">
+                    <img class="img-responsive center-block img-circle x-large"
+                         src="{{ '/assets/images/judges/' | prepend: site.baseurl }}{{ judge.name | replace: ' ', '_' }}.jpg"
+                         alt="{{ judge.name }}">
+                    <p class="name">{{ judge.name }}</p>
+                    <p class="position">{{ judge.position }}</p>
+                    <p class="company">{{ judge.company }}</p>
+                </article>
+            {% endfor %}
+        </section>
+    </div>
+</div>

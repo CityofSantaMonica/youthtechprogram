@@ -5,13 +5,15 @@
             <h3>Our alumni have joined the team</h3>
         </div>
 
-        <div class="staff-roster row">
+        <div class="row">
             {% for staff in site.data.staff %}
-                <div class="staff col-xs-6 col-sm-4 col-md-3">
+                <div class="staff-card col-xs-6 col-sm-4 col-md-3">
                     {% if staff.placeholder %}
                         <img src="http://placehold.it/100x100?text=%20" alt="">
                     {% else %}
-                        <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.jpg" alt="{{ staff.name }}'s picture" />
+                        <img src="{{ site.baseurl }}/assets/images/staff/{{ staff.name | replace: ' ', '' }}.jpg"
+                             alt="{{ staff.name }}'s picture"
+                             class="img-circle" >
                     {% endif %}
 
                     {% if staff.name %}

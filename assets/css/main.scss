@@ -8,9 +8,11 @@
 @import 'bootstrap/carousel';
 @import 'bootstrap/navigation';
 
+@import 'modules/size';
 @import 'modules/book-shelf';
 @import 'modules/siblings';
 @import 'generic/anchor';
+@import 'generic/images';
 @import 'generic/lists';
 
 @import 'partials/blackboard';
@@ -18,6 +20,7 @@
 @import 'partials/css-table';
 @import 'partials/faq-panel';
 @import 'partials/image-floater';
+@import 'partials/logo';
 @import 'partials/page-sections';
 @import 'partials/photo';
 @import 'partials/footer';

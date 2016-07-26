@@ -1,0 +1,35 @@
+- name: Michael Jones
+  position: CEO
+  company: Science Inc
+
+- name: Gary Carter
+  position: Community Broadband Manager
+  company: City of Santa Monica
+
+- name: Fabian Geyrhalter
+  position: Principal
+  company: Finien
+
+- name: Mohamed Kamal
+  position: Co-Founder | CTO
+  company: Building Bloc
+
+- name: Julie Rusk
+  position: Assistant Director | CCS
+  company: City of Santa Monica
+
+- name: Ben Fathi
+  position: Creative Director
+  company: DTE Media
+
+- name: Nimish Patel
+  position: Vice Chairman
+  company: Mitchell Silberberg & Knupp LLP
+
+- name: Brian Mac Mahon
+  position: Head Honcho
+  company: Expert Dojo
+
+- name: Christina Booth
+  position: Account Manager
+  company: Google

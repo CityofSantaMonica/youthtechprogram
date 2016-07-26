@@ -1,29 +1,26 @@
-.program-staff {
-    .staff-roster {
-        .staff {
-            margin-bottom: $spacing-vertical-small;
-            text-align: center;
+.staff-card {
+    margin-bottom: $spacing-vertical-small;
+    text-align: center;
 
-            img {
-                $height: 100px;
+    img {
+        @include size(100px);
 
-                border-radius: 50%;
-                height: $height;
-                margin-bottom: 5px;
-                width: $height;
-            }
+        margin-bottom: 5px;
 
-            p {
-                margin-bottom: 0;
+        &.x-large {
+            @include size(200px);
+        }
+    }
 
-                &.name {
-                    font-weight: bold;
-                }
+    p {
+        margin-bottom: 0;
 
-                &.position {
+        &.name {
+            font-weight: bold;
+        }
 
-                }
-            }
+        &.position {
+
         }
     }
 }
