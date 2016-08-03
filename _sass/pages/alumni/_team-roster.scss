@@ -3,11 +3,25 @@
 }
 
 .team-member {
+    min-height: 160px;
     padding: {
         left: 10px;
         right: 10px;
     }
-    width: percentage(1/7);
+    width: percentage(1/2);
+
+    @include respond-to(ms) {
+        min-height: 120px;
+        width: percentage(1/3);
+    }
+
+    @include respond-to(sm) {
+        min-height: 100px;
+    }
+
+    @include respond-to(lg) {
+        width: percentage(1/7);
+    }
 }
 
 .team-member__name {
