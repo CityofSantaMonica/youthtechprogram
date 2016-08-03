@@ -1,0 +1,20 @@
+.team-name {
+    margin-bottom: 15px;
+}
+
+.team-member {
+    padding: {
+        left: 10px;
+        right: 10px;
+    }
+    width: percentage(1/7);
+}
+
+.team-member__name {
+    margin-bottom: 0;
+}
+
+.team-member__picture {
+    margin-bottom: 15px;
+    width: 75px;
+}

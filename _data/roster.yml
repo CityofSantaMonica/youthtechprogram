@@ -1,0 +1,654 @@
+-
+    fname: David
+    lname: Xiao
+    year: 2012
+    company: Find Some Yum
+    title: COO
+-
+    fname: Jamila
+    lname: Haji
+    year: 2012
+    company: Find Some Yum
+    title: CEO
+-
+    fname: Kenny
+    lname: Kim
+    year: 2012
+    company: Find Some Yum
+    title: CTO
+-
+    fname: Kevin
+    lname: Grossi
+    year: 2012
+    company: Find Some Yum
+    title: CFO
+-
+    fname: Vladimir
+    lname: Jimenez
+    year: 2012
+    company: Find Some Yum
+    title: CIO
+-
+    fname: Dionsio
+    lname: Flores
+    year: 2012
+    company: Find Some Yum
+    title: CMO
+-
+    fname: Andrew
+    lname: Ribe
+    year: 2012
+    company: QckPrk
+    title: CFO
+-
+    fname: Elias
+    lname: Richter
+    year: 2012
+    company: QckPrk
+    title: COO
+-
+    fname: Liku
+    lname: Abera
+    year: 2012
+    company: QckPrk
+    title: CMO
+-
+    fname: Matthew
+    lname: Cline
+    year: 2012
+    company: QckPrk
+    title: CCO
+-
+    fname: Riyad
+    lname: Shauk
+    year: 2012
+    company: QckPrk
+    title: CTO
+-
+    fname: Won Jae
+    lname: Yang
+    year: 2012
+    company: QckPrk
+    title: CEO
+-
+    fname: Brandon
+    lname: Su
+    year: 2013
+    company: Interest Alley
+    title: CMO
+-
+    fname: Hunter
+    lname: Buckhorn
+    year: 2013
+    company: Interest Alley
+    title: CEO
+-
+    fname: Ismael
+    lname: De Pablo
+    year: 2013
+    company: Interest Alley
+    title: CIO
+-
+    fname: Omar
+    lname: De Arcos
+    year: 2013
+    company: Interest Alley
+    title: CTO
+-
+    fname: Benjamin
+    lname: Richman
+    year: 2013
+    company: SMFitNet
+    title: CEO
+-
+    fname: Gregory
+    lname: Bolten
+    year: 2013
+    company: SMFitNet
+    title: CFO
+-
+    fname: Nikka
+    lname: Yalung
+    year: 2013
+    company: SMFitNet
+    title: COO
+-
+    fname: Noah
+    lname: Palomar
+    year: 2013
+    company: SMFitNet
+    title: CTO
+-
+    fname: Aman
+    lname: Haji
+    year: 2014
+    company: Dynami Systems
+    title: COO
+-
+    fname: Howard
+    lname: Scales
+    year: 2014
+    company: Dynami Systems
+    title: CCO
+-
+    fname: Jaryd
+    lname: Dorsey
+    year: 2014
+    company: Dynami Systems
+    title: CAO
+-
+    fname: Jonathan
+    lname: Fanous
+    year: 2014
+    company: Dynami Systems
+    title: CFO
+-
+    fname: Kevin
+    lname: Ng
+    year: 2014
+    company: Dynami Systems
+    title: CEO
+-
+    fname: Aaron
+    lname: Attarzadeh
+    year: 2014
+    company: Spinzie
+    title: CTO
+-
+    fname: Brandt
+    lname: Weary
+    year: 2014
+    company: Spinzie
+    title: CFO
+-
+    fname: Bryan
+    lname: Diaz
+    year: 2014
+    company: Spinzie
+    title: CIO
+-
+    fname: Chantelle
+    lname: Alcantara
+    year: 2014
+    company: Spinzie
+    title: CMO
+-
+    fname: James
+    lname: Vivar
+    year: 2014
+    company: Spinzie
+    title: CCO
+-
+    fname: Roheen
+    lname: Karimali
+    year: 2014
+    company: Spinzie
+    title: CEO
+-
+    fname: Tanner
+    lname: Leigh
+    year: 2014
+    company: Spinzie
+    title: COO
+-
+    fname: Isa
+    lname: Milefchik
+    year: 2014
+    company: The Odd Spots
+    title: CIO
+-
+    fname: Julia
+    lname: Tung
+    year: 2014
+    company: The Odd Spots
+    title: CCO
+-
+    fname: Kevin
+    lname: Tran
+    year: 2014
+    company: The Odd Spots
+    title: COO
+-
+    fname: Nick
+    lname: Gottleib
+    year: 2014
+    company: The Odd Spots
+    title: CEO
+-
+    fname: Sameer
+    lname: Hirjee
+    year: 2014
+    company: The Odd Spots
+    title: CMO
+-
+    fname: Tab
+    lname: Chapman
+    year: 2014
+    company: The Odd Spots
+    title: CFO
+-
+    fname: Timothy
+    lname: Olivares
+    year: 2014
+    company: The Odd Spots
+    title: CTO
+-
+    fname: Campbell
+    lname: Affleck
+    year: 2014
+    company: Zermely
+    title: CIO
+-
+    fname: Carruth
+    lname: Cull
+    year: 2014
+    company: Zermely
+    title: CEO
+-
+    fname: Cole
+    lname: Thomas
+    year: 2014
+    company: Zermely
+    title: CFO
+-
+    fname: Indu
+    lname: Korambath
+    year: 2014
+    company: Zermely
+    title: CTO
+-
+    fname: Rodolofo
+    lname: Balderamma
+    year: 2014
+    company: Zermely
+    title: CCO
+-
+    fname: Samantha
+    lname: Hsieh
+    year: 2014
+    company: Zermely
+    title: COO
+-
+    fname: Dylan
+    lname: Patel
+    year: 2015
+    company: Coblic
+    title: CEO
+-
+    fname: Julia
+    lname: Engfer
+    year: 2015
+    company: Coblic
+    title: CCO
+-
+    fname: Kevin
+    lname: Lopez
+    year: 2015
+    company: Coblic
+    title: CIO
+-
+    fname: Nia
+    lname: Allen
+    year: 2015
+    company: Coblic
+    title: CAO
+-
+    fname: Omzee
+    lname: Pitchford
+    year: 2015
+    company: Coblic
+    title: CMO
+-
+    fname: Rosalind
+    lname: Niu
+    year: 2015
+    company: Coblic
+    title: COO
+-
+    fname: Sam
+    lname: Sheldon
+    year: 2015
+    company: Coblic
+    title: CTO
+-
+    fname: Alexandra
+    lname: Flores
+    year: 2015
+    company: Foodonym
+    title: CMO
+-
+    fname: Chrysoula
+    lname: Kapelonis
+    year: 2015
+    company: Foodonym
+    title: COO
+-
+    fname: Ezekiel
+    lname: Pogue
+    year: 2015
+    company: Foodonym
+    title: CTO
+-
+    fname: Leiloni
+    lname: Reynoso
+    year: 2015
+    company: Foodonym
+    title: CEO
+-
+    fname: Makeda
+    lname: Floyd
+    year: 2015
+    company: Foodonym
+    title: CCO
+-
+    fname: Nicholas
+    lname: Elek-Truman
+    year: 2015
+    company: Foodonym
+    title: CIO
+-
+    fname: Sam
+    lname: Cohen-Suelter
+    year: 2015
+    company: Foodonym
+    title: CFO
+-
+    fname: Allison
+    lname: Kallin
+    year: 2015
+    company: Khordify
+    title: CCO
+-
+    fname: Charles
+    lname: Yang
+    year: 2015
+    company: Khordify
+    title: CEO
+-
+    fname: Iman
+    lname: Honardoost
+    year: 2015
+    company: Khordify
+    title: CIO
+-
+    fname: Katherine
+    lname: Young
+    year: 2015
+    company: Khordify
+    title: CMO
+-
+    fname: Keith
+    lname: Choi
+    year: 2015
+    company: Khordify
+    title: CTO
+-
+    fname: Khaliah
+    lname: Sanders
+    year: 2015
+    company: Khordify
+    title: CFO
+-
+    fname: Muizz
+    lname: Jivani
+    year: 2015
+    company: Khordify
+    title: COO
+-
+    fname: Ahmira
+    lname: Reyes-McKinley
+    year: 2015
+    company: StreetGlyph
+    title: CMO
+-
+    fname: Alexander
+    lname: Soohoo
+    year: 2015
+    company: StreetGlyph
+    title: CEO
+-
+    fname: Blake
+    lname: Fragoso
+    year: 2015
+    company: StreetGlyph
+    title: COO
+-
+    fname: Brittany
+    lname: Aquino
+    year: 2015
+    company: StreetGlyph
+    title: CCO
+-
+    fname: Ebony
+    lname: Warren
+    year: 2015
+    company: StreetGlyph
+    title: CFO
+-
+    fname: Kevin
+    lname: Baker
+    year: 2015
+    company: StreetGlyph
+    title: CIO
+-
+    fname: Neil
+    lname: Sonnenberg
+    year: 2015
+    company: StreetGlyph
+    title: CTO
+-
+    fname: Colton
+    lname: Halpert
+    year: 2015
+    company: TutorPlug
+    title: COO
+-
+    fname: Deanna
+    lname: Gutierrez
+    year: 2015
+    company: TutorPlug
+    title: CMO
+-
+    fname: Eduardo
+    lname: Vasquez
+    year: 2015
+    company: TutorPlug
+    title: CIO
+-
+    fname: Helen
+    lname: Cristobal
+    year: 2015
+    company: TutorPlug
+    title: CCO
+-
+    fname: Jorge
+    lname: Melendez
+    year: 2015
+    company: TutorPlug
+    title: CTO
+-
+    fname: Ronald
+    lname: Tuyl
+    year: 2015
+    company: TutorPlug
+    title: CFO
+-
+    fname: Tianru
+    lname: Wang
+    year: 2015
+    company: TutorPlug
+    title: CEO
+-
+    fname: Eliott
+    lname: Livolsi
+    year: 2016
+    company: Domo Chef
+    title: CMO
+-
+    fname: Hieu
+    lname: Nguyen
+    year: 2016
+    company: Domo Chef
+    title: CTO
+-
+    fname: Luis
+    lname: Ogaz
+    year: 2016
+    company: Domo Chef
+    title: CEO
+-
+    fname: Naveen
+    lname: Bahadur
+    year: 2016
+    company: Domo Chef
+    title: CIO
+-
+    fname: Sam
+    lname: Linowes
+    year: 2016
+    company: Domo Chef
+    title: COO
+-
+    fname: Trevor
+    lname: Nevell
+    year: 2016
+    company: Domo Chef
+    title: CFO
+-
+    fname: Annie
+    lname: Donaldson
+    year: 2016
+    company: Frame Finds
+    title: CEO
+-
+    fname: Clara
+    lname: Chun
+    year: 2016
+    company: Frame Finds
+    title: CTO
+-
+    fname: Elizabeth
+    lname: Chimalpopoca
+    year: 2016
+    company: Frame Finds
+    title: COO
+-
+    fname: Gabriela
+    lname: Guevara
+    year: 2016
+    company: Frame Finds
+    title: CCO
+-
+    fname: Jasmine
+    lname: Javaheri
+    year: 2016
+    company: Frame Finds
+    title: CMO
+-
+    fname: Yue
+    lname: Ying
+    year: 2016
+    company: Frame Finds
+    title: CFO
+-
+    fname: Lana
+    lname: Biren
+    year: 2016
+    company: InFarmMe
+    title: CTO
+-
+    fname: Maanav
+    lname: Ahluwalia
+    year: 2016
+    company: InFarmMe
+    title: CEO
+-
+    fname: Madison
+    lname: Quan
+    year: 2016
+    company: InFarmMe
+    title: CCO
+-
+    fname: Matthew
+    lname: Choi
+    year: 2016
+    company: InFarmMe
+    title: CIO
+-
+    fname: Micah
+    lname: Jamieson
+    year: 2016
+    company: InFarmMe
+    title: CFO
+-
+    fname: Shanya
+    lname: Hewage
+    year: 2016
+    company: InFarmMe
+    title: COO
+-
+    fname: Heidy
+    lname: Gomez
+    year: 2016
+    company: Lyrnics
+    title: CCO
+-
+    fname: Kyle
+    lname: Schwartz
+    year: 2016
+    company: Lyrnics
+    title: COO
+-
+    fname: Molly
+    lname: Sadler
+    year: 2016
+    company: Lyrnics
+    title: CMO
+-
+    fname: Nasir
+    lname: Grissom
+    year: 2016
+    company: Lyrnics
+    title: CEO
+-
+    fname: Persia
+    lname: Mehrian
+    year: 2016
+    company: Lyrnics
+    title: CFO
+-
+    fname: Andrew
+    lname: Hu
+    year: 2016
+    company: Merit Hero
+    title: CTO
+-
+    fname: Ariana
+    lname: Torres
+    year: 2016
+    company: Merit Hero
+    title: CFO
+-
+    fname: Audrey
+    lname: Howard
+    year: 2016
+    company: Merit Hero
+    title: CCO
+-
+    fname: Cooper
+    lname: deNicola
+    year: 2016
+    company: Merit Hero
+    title: CEO
+-
+    fname: Saher
+    lname: Damji
+    year: 2016
+    company: Merit Hero
+    title: CMO
+-
+    fname: Seraphina
+    lname: Botero
+    year: 2016
+    company: Merit Hero
+    title: COO
