@@ -1,3 +1,32 @@
+.college-logo,
+.college-name {
+    display: table;
+    margin: 0 auto;
+    width: 130px;
+
+    @include respond-to(md) {
+        width: 100%;
+    }
+
+    .logo,
+    .site {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+.college-logo {
+    height: 190px;
+
+    @include respond-to(md) {
+        height: 230px;
+    }
+}
+
+.college-name {
+    height: 60px;
+}
+
 .team-name {
     margin-bottom: 15px;
 }

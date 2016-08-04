@@ -1,28 +1,35 @@
 {% assign years = site.data.roster | group_by: 'year' %}
 
 <div class="container">
-    {% for year in years %}
-        {% assign teams = year.items | group_by: 'company' %}
-        
-        <div class="ytp-roster">
-            <div class="year h2">{{ year.name }}</div>
-            
-            {% for team in teams %}
-                {% assign members = team.items | sort: 'fname' %}
-
-                <div class="h3 team-name">{{ team.name }}</div>
-                <div class="clearfix team">
-                    {% for member in members %}
-                        <div class="team-member text-center pull-left">
-                            <img src="{{ site.baseurl }}/assets/images/roster/{{ member.year }}/{{ member.company | replace: ' ', '_' }}/{{ member.fname | replace: ' ', '_'  }}_{{ member.lname | replace: ' ', '_' }}.png"
-                                 class="team-member__picture img-rounded"
-                                 alt="{{ member.fname }} {{ member.lname }}">
-                            <p class="team-member__name"><strong>{{ member.fname }} {{ member.lname }}</strong></p>
-                            <p class="team-member__position">{{ member.title }}, {{ member.company }}</p>
-                        </div>
-                    {% endfor %}
-                </div>
-            {% endfor %}
+    <div class="page-section">
+        <div class="section-header">
+            <h2>Our Past Participants</h2>
+            <h3>It's Our Own Little Yearbook</h3>
         </div>
-    {% endfor %}
+
+        {% for year in years %}
+            {% assign teams = year.items | group_by: 'company' %}
+
+            <div class="ytp-roster">
+                <div class="year h2">{{ year.name }}</div>
+
+                {% for team in teams %}
+                    {% assign members = team.items | sort: 'fname' %}
+
+                    <div class="h3 team-name">{{ team.name }}</div>
+                    <div class="clearfix team">
+                        {% for member in members %}
+                            <div class="team-member text-center pull-left">
+                                <img src="{{ site.baseurl }}/assets/images/roster/{{ member.year }}/{{ member.company | replace: ' ', '_' }}/{{ member.fname | replace: ' ', '_'  }}_{{ member.lname | replace: ' ', '_' }}.png"
+                                     class="team-member__picture img-rounded"
+                                     alt="{{ member.fname }} {{ member.lname }}">
+                                <p class="team-member__name"><strong>{{ member.fname }} {{ member.lname }}</strong></p>
+                                <p class="team-member__position">{{ member.title }}, {{ member.company }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
 </div>

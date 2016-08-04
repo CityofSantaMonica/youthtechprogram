@@ -8,6 +8,9 @@
   - name: Hulu
     link: http://www.hulu.com/
     classes: partner-sm-6
+  - name: Santa Monica CityNet
+    link: http://smcitynet.com/
+    classes: partner-sm-6
 -
   - name: Coloft
     link: http://coloft.com/
@@ -15,8 +18,6 @@
   - name: ROC
     link: http://realofficecenters.com/
     classes: partner-sm-6
-  - name: Santa Monica CityNet
-    link: http://smcitynet.com/
 -
   - name: Leanometry
     link: http://leanometry.com/
