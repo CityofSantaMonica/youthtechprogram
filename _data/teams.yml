@@ -49,3 +49,23 @@
 - name: Zermely
   desc: Location and Crowd Service
   mission: Identify the location and density of crowds in Santa Monica’s public areas
+
+- name: Frame Finds
+  desc: Finding unique backgrounds for pictures
+  mission: Encourages others to explore their srroundings through photography
+
+- name: Domo Chef
+  desc: Service for beginner cooks
+  mission: Provides a conneciton in the community betwee home chefs and beginner cooks
+
+- name: InFarmMe
+  desc: Farmers market reservations
+  mission: Informs the community about the smart, fresh, and healthy choices the local farmers markets have to offer
+
+- name: Lyrnics
+  desc: Turns school notes into music
+  mission: Allows middle school and high school students to turn dull notes into vibrant songs
+
+- name: Merit Hero
+  desc: Incentives for good grades
+  mission: Encourages learning and academic achievement in high school students by offering incentives

@@ -2,13 +2,14 @@
     <div class="container">
         <div class="section-header">
             <h2>Previous Teams</h2>
-            <h3>Our students have built 18 companies during our 6-week program</h3>
+            <h3>Our students have built {{ site.data.teams | size }} companies during our 6-week program</h3>
         </div>
 
         <div class="holding-company">
-            {% for company in site.data.teams %}
+            {% assign companies = site.data.teams | sort: 'name' %}
+            {% for company in companies %}
                 <div class="subsidiary" data-toggle="tooltip" data-placement="bottom" title="{{ company.desc }}">
-                    <img src="{{ site.baseurl }}/assets/images/companies/{{ company.name | replace: ' ', '' }}.png" alt="{{ company.name }}'s logo">
+                    <img src="{{ site.baseurl }}/assets/images/companies/{{ company.name | replace: ' ', '_' }}.png" alt="{{ company.name }}'s logo">
                     <p>{{ company.name }}</p>
                 </div>
             {% endfor %}

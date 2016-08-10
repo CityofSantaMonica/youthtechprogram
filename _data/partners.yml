@@ -18,6 +18,12 @@
   - name: ROC
     link: http://realofficecenters.com/
     classes: partner-sm-6
+  - name: Google
+    link: https://www.google.com/
+    classes: partner-sm-6
+  - name: Science Inc.
+    link: http://www.science-inc.com/
+    classes: partner-sm-6
 -
   - name: Leanometry
     link: http://leanometry.com/
