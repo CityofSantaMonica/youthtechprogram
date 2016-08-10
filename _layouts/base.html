@@ -3,24 +3,7 @@
     {% include head.html %}
 
     <body>
-        <header class="site-header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <div class="ytp-logo">
-                            <p class="top">Santa Monica</p>
-                            <p class="bottom">Youth Tech Program</p>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 hidden-xs text-right">
-                        <div class="city-logo">
-                            <img src="{{ '/assets/images/csm-logo-black.png' | prepend: site.baseurl }}"
-                                 alt="City of Santa Monica">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
+        {% include navigation.html %}
 
         {% comment %}
             Our banners & jumbotrons are handled be the layouts that extend this layout

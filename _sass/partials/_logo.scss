@@ -1,4 +1,26 @@
+.vertical-spacer {
+    display: inline-block;
+    border: 1px solid #bfbfbf;
+    height: 65px;
+    margin: 0 15px;
+    width: 1px;
+}
+
+.ytp-logo,
+.city-logo {
+    display: inline-block;
+    vertical-align: top;
+}
+
 .ytp-logo {
+    position: relative;
+
+    .shield {
+        @include size(100%);
+
+        position: absolute;
+    }
+
     .top {
         font-size: 24px;
         font-weight: 100;
@@ -28,5 +50,32 @@
 
     .city-logo img {
         width: 70px;
+    }
+}
+
+.navigation {
+    border-top: 1px solid #efefef;
+    margin-top: 15px;
+    padding-top: 15px;
+    text-align: center;
+
+    @include respond-to(sm) {
+        border-top: none;
+        margin-top: 0;
+        padding-top: 0;
+        text-align: right;
+    }
+
+    a {
+        color: $ytp-secondary;
+        line-height: 35px;
+
+        @include respond-to(sm) {
+            line-height: 70px;
+        }
+    }
+
+    ul {
+        margin-bottom: 0;
     }
 }

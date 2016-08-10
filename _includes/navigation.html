@@ -1,20 +1,27 @@
-<nav class="navbar navbar-opaque-dark">
+<header class="site-header">
     <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#site-navbar" aria-expanded="false">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="city-logo hidden-xs">
+                    <a href="http://www.smgov.net">
+                        <img src="{{ '/assets/images/csm-logo-black.png' | prepend: site.baseurl }}"
+                             alt="City of Santa Monica">
+                    </a>
+                </div>
 
-            <a class="navbar-brand" href="{{ site.baseurl | prepend: "/" }}">Youth Tech Program</a>
-        </div>
+                <div class="hidden-xs vertical-spacer"></div>
 
-        <div class="navbar-collapse collapse" id="site-navbar">
-            <ul class="nav navbar-nav navbar-right">
-                {% include partials/pages.html %}
-            </ul>
+                <div class="ytp-logo">
+                    <a href="{{ '/' | prepend: site.baseurl }}" class="shield"></a>
+                    <p class="top">Santa Monica</p>
+                    <p class="bottom">Youth Tech Program</p>
+                </div>
+            </div>
+            <div class="col-sm-4 navigation">
+                <ul class="list-inline">
+                    <li><a href="{{ '/alumni' | prepend: site.baseurl }}">Alumni</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</nav>
+</header>

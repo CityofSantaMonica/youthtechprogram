@@ -2,7 +2,7 @@ a {
     position: relative;
 
     &.external {
-        &:after {
+        &::after {
             content: '\f017';
             font-family: DefaultKit;
             font-size: 10px;
