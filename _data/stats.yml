@@ -51,8 +51,8 @@
     In the 2016 program, we reached an all-time high of 55.2% female participation.
 
     <ul class="chart-legend row">
-        <li class="col-xs-12 col-sm-6 ct-series-a">Female Participation</li>
-        <li class="col-xs-12 col-sm-6 ct-series-b">Male Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-a">Male Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">Female Participation</li>
      </ul>
   data:
     labels:
@@ -63,17 +63,17 @@
       - 2016
     series:
       -
-        - 15.38
-        - 12.50
-        - 20
-        - 45.71
-        - 55.2
-      -
         - 84.62
         - 87.50
         - 80
         - 54.29
         - 44.8
+      -
+        - 15.38
+        - 12.50
+        - 20
+        - 45.71
+        - 55.2
 
 - name: growth
   type:
@@ -169,10 +169,10 @@
     </ul>
   data:
     series:
-      - 5  # Friends of Sunset Park
-      - 4  # North of Montana Association
-      - 1  # Northeast Neighbors Association
-      - 1  # Ocean Park Association
-      - 3  # Pico Neighborhood
-      - 1  # Santa Monica Mid-City Neighbors
+      - 33  # Friends of Sunset Park
+      - 27  # North of Montana Association
+      - 6  # Northeast Neighbors Association
+      - 7  # Ocean Park Association
+      - 20  # Pico Neighborhood
+      - 7  # Santa Monica Mid-City Neighbors
       - 0  # Wilshire/Montana Neighborhood
