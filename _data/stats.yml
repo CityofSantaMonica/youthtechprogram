@@ -169,10 +169,10 @@
     </ul>
   data:
     series:
-      - 33  # Friends of Sunset Park
-      - 27  # North of Montana Association
-      - 6  # Northeast Neighbors Association
-      - 7  # Ocean Park Association
-      - 20  # Pico Neighborhood
-      - 7  # Santa Monica Mid-City Neighbors
+      - 5  # Friends of Sunset Park
+      - 4  # North of Montana Association
+      - 1  # Northeast Neighbors Association
+      - 1  # Ocean Park Association
+      - 3  # Pico Neighborhood
+      - 1  # Santa Monica Mid-City Neighbors
       - 0  # Wilshire/Montana Neighborhood
