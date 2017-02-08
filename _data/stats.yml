@@ -48,7 +48,7 @@
   title: Female Participation
   slug: Closing the gender gap in the technology workforce
   content: >
-    In the 2015 program, we reached an all-time high of 45.7% female participation.
+    In the 2016 program, we reached an all-time high of 55.2% female participation.
 
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">Female Participation</li>
@@ -60,17 +60,20 @@
       - 2013
       - 2014
       - 2015
+      - 2016
     series:
       -
         - 15.38
         - 12.50
         - 20
         - 45.71
+        - 55.2
       -
         - 84.62
         - 87.50
         - 80
         - 54.29
+        - 44.8
 
 - name: growth
   type:
@@ -91,29 +94,32 @@
       - 2013
       - 2014
       - 2015
+      - 2016
     series:
       - # Male
         - 11
         - 7
         - 20
         - 19
+        - 17
       - # Female
         - 2
         - 1
         - 5
         - 16
+        - 18
 
 - name: ethnicity
   type:
     primary: bar
     secondary: percent
-  title: 2015 Race/Ethnicity Stats
+  title: 2016 Race/Ethnicity Stats
   slug: Focusing on diversity
   content: >
     Bringing a diverse community together to learn technology.
 
     <ul class="chart-legend row">
-        <li class="col-xs-12 col-sm-6 ct-series-a">2015 Youth Tech Participants</li>
+        <li class="col-xs-12 col-sm-6 ct-series-a">2016 Youth Tech Participants</li>
         <li class="col-xs-12 col-sm-6 ct-series-b">
             Santa Monica Population Distribution <br/>
             <span style="display: block; font-size: 9px; margin-top: 0;">U.S. Census Bureau (2010)</span>
@@ -129,11 +135,11 @@
       - Native Hawaiian and Other Pacific Islander
     series:
       -
-        - 22.9
-        - 37.1
-        - 22.9
-        - 17.1
-        - 0.0
+        - 41.4
+        - 27.6
+        - 17.2
+        - 10.3
+        - 3.4
         - 0.0
       -
         - 9.0
@@ -147,7 +153,7 @@
   type:
     primary: pie
     secondary: special
-  title: 2015 Neighborhood Participation
+  title: 2016 Neighborhood Participation
   slug: Working together as a community
   content: >
     Students from all neighborhoods work together to launch their Startups.
@@ -163,10 +169,10 @@
     </ul>
   data:
     series:
-      - 4  # Friends of Sunset Park
-      - 3  # North of Montana Association
-      - 0  # Northeast Neighbors Association
-      - 5  # Ocean Park Association
-      - 9  # Pico Neighborhood
-      - 2  # Santa Monica Mid-City Neighbors
-      - 12 # Wilshire/Montana Neighborhood
+      - 5  # Friends of Sunset Park
+      - 4  # North of Montana Association
+      - 1  # Northeast Neighbors Association
+      - 1  # Ocean Park Association
+      - 3  # Pico Neighborhood
+      - 1  # Santa Monica Mid-City Neighbors
+      - 0  # Wilshire/Montana Neighborhood
