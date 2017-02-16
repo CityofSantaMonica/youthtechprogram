@@ -112,10 +112,10 @@
     series:
       - 5  # Friends of Sunset Park
       - 4  # North of Montana Association
-      - 1  # Northeast Neighbors Association
-      - 1  # Ocean Park Association
+      - 1.1  # Northeast Neighbors Association
+      - 1.1  # Ocean Park Association
       - 3  # Pico Neighborhood
-      - 1  # Santa Monica Mid-City Neighbors
+      - 1.1  # Santa Monica Mid-City Neighbors
       - 0  # Wilshire/Montana Neighborhood
 
 - name: interns
