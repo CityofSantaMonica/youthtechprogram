@@ -15,31 +15,6 @@
 #                #    - Line: https://gionkunz.github.io/chartist-js/api-documentation.html#chartistline-function-line
 #                #    - Pie:  https://gionkunz.github.io/chartist-js/api-documentation.html#chartistpie-function-pie
 
-- name: interns
-  type:
-    primary: line
-    secondary: percent
-  title: Internship Placement
-  slug: This is a flatline we love
-  content: >
-    100% of our active alumni attending college, have been accepted to internships at awesome places such as Sony Computer Entertainment, Lionsgate Entertainment, Wayfair, Favrit, and many more!
-  data:
-    labels:
-      - 2012
-      - 2013
-      - 2014
-      - 2015
-    series:
-      -
-        - 100
-        - 100
-        - 100
-        - 100
-      -
-        - 100
-        - 100
-        - 100
-        - 100
 
 - name: gender
   type:
@@ -74,40 +49,6 @@
         - 20
         - 45.71
         - 55.2
-
-- name: growth
-  type:
-    primary: bar
-    secondary: stacked
-  title: Program growth
-  slug: Look how far we’ve come
-  content: >
-    We have increased the number of participants from 13 in 2012 to 35 in 2016.
-
-    <ul class="chart-legend row">
-        <li class="col-xs-12 col-sm-6 ct-series-a">Male Participation</li>
-        <li class="col-xs-12 col-sm-6 ct-series-b">Female Participation</li>
-    </ul>
-  data:
-    labels:
-      - 2012
-      - 2013
-      - 2014
-      - 2015
-      - 2016
-    series:
-      - # Male
-        - 11
-        - 7
-        - 20
-        - 19
-        - 17
-      - # Female
-        - 2
-        - 1
-        - 5
-        - 16
-        - 18
 
 - name: ethnicity
   type:
@@ -176,3 +117,66 @@
       - 3  # Pico Neighborhood
       - 1  # Santa Monica Mid-City Neighbors
       - 0  # Wilshire/Montana Neighborhood
+
+- name: interns
+  type:
+    primary: line
+    secondary: percent
+  title: Internship Placement
+  slug: This is a flatline we love
+  content: >
+    100% of our active alumni attending college, have been accepted to internships at awesome places such as Sony Computer Entertainment, Lionsgate Entertainment, Wayfair, Favrit, and many more!
+  data:
+    labels:
+      - 2012
+      - 2013
+      - 2014
+      - 2015
+      - 2016
+    series:
+      -
+        - 100
+        - 100
+        - 100
+        - 100
+        - 100
+      -
+        - 100
+        - 100
+        - 100
+        - 100
+        - 100
+
+- name: growth
+  type:
+    primary: bar
+    secondary: stacked
+  title: Program growth
+  slug: Look how far we’ve come
+  content: >
+    We have increased the number of participants from 13 in 2012 to 35 in 2016.
+
+    <ul class="chart-legend row">
+        <li class="col-xs-12 col-sm-6 ct-series-a">Male Participation</li>
+        <li class="col-xs-12 col-sm-6 ct-series-b">Female Participation</li>
+    </ul>
+  data:
+    labels:
+      - 2012
+      - 2013
+      - 2014
+      - 2015
+      - 2016
+    series:
+      - # Male
+        - 11
+        - 7
+        - 20
+        - 19
+        - 17
+      - # Female
+        - 2
+        - 1
+        - 5
+        - 16
+        - 18
