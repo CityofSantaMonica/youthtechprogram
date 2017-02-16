@@ -13,9 +13,6 @@
   position: Program Supervisor
 
 # Second row
-- name: Tawny Payton
-  position: Program Specialist
-
 - name: Brownie Sibrian
   position: Program Specialist
 
@@ -26,11 +23,11 @@
   position: Lead Coding Instructor
   year: 2012 Alumni
 
-# Third row
 - name: Kevin Grossi
   position: Coding Instructor
   year: 2012 Alumni
 
+# Third row
 - name: Omar De Arcos
   position: Networking Instructor
   year: 2013 Alumni
@@ -43,7 +40,6 @@
   position: Coding Instructor
   year: 2012 Alumni
 
-# Fourth row
 - name: Kevin Tran
   position: UI/UX Instructor
   year: 2014 Alumni
