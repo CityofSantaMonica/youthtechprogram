@@ -1,6 +1,20 @@
+.staff-roster {
+    display: flex;
+    flex-wrap: wrap;
+}
+// col-xs-6 col-sm-4 col-md-3
 .staff-card {
+    flex-basis: 50%;
     margin-bottom: $spacing-vertical-small;
     text-align: center;
+
+    @include respond-to(sm) {
+        flex-basis: 33.33%;
+    }
+
+    @include respond-to(md) {
+        flex-basis: 25%;
+    }
 
     img {
         @include size(100px);

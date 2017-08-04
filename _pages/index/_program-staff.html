@@ -5,9 +5,9 @@
             <h3>Our alumni have joined the team</h3>
         </div>
 
-        <div class="row">
+        <div class="staff-roster">
             {% for staff in site.data.staff %}
-                <div class="staff-card col-xs-6 col-sm-4 col-md-3">
+                <div class="staff-card">
                     {% if staff.placeholder %}
                         <img src="http://placehold.it/100x100?text=%20" alt="">
                     {% else %}
