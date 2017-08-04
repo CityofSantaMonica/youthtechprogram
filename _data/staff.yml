@@ -16,16 +16,17 @@
 - name: Brownie Sibrian
   position: Program Specialist
 
-- name: Victoria Contreras
-  position: Collaboration Instructor
-
-- name: Vladimir Jimenez
-  position: Lead Coding Instructor
-  year: 2012 Alumni
-
 - name: Kevin Grossi
-  position: Coding Instructor
+  position: Program Specialist/Lead Coding Instructor
   year: 2012 Alumni
+
+- name: Omzee Pitchford
+  position: Collaboration Instructor
+  year: 2015 Alumni
+
+- name: Maanav Ahluwalia
+  position: App Development Instructor
+  year: 2016 Alumni
 
 # Third row
 - name: Omar De Arcos
@@ -36,10 +37,13 @@
   position: Lean Start-up Instructor
   year: 2014 Alumni
 
-- name: David Xiao
-  position: Coding Instructor
-  year: 2012 Alumni
+- name: Sai Maddali
+  position: Economics Instructor
 
 - name: Kevin Tran
   position: UI/UX Instructor
   year: 2014 Alumni
+  
+- name: Leiloni Reynoso
+  position: Business Development Instructor
+  year: 2015 Alumni
