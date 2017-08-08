@@ -69,3 +69,23 @@
 - name: Merit Hero
   desc: Incentives for good grades
   mission: Encourages learning and academic achievement in high school students by offering incentives
+
+- name: Inspoeta
+  desc: Online community for poets
+  mission: To create an online community filled with poets and poem enthusiasts
+
+- name: Tsunimby
+  desc: Social activism platform
+  mission: Introduce individuals to other advocats who share the same morals and ideals, while providing social activism opportunities
+
+- name: PolyBoxy
+  desc: Cultural, subscription box service
+  mission: Provide people with monthly access to a virtual and physical box professionally curated to a culture they are interested in
+
+- name: ResidenTours
+  desc: Personalized your service
+  mission: To revolutionize the tourism marketplace by providing personalized tours given by locals to travelers
+
+- name: Cart Savy
+  desc: A meal planning service
+  mission: To streamline the time consuming process of meal planning, with the aim of giving users the chance to create delicious, healthy meals
