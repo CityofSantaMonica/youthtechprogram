@@ -6,16 +6,14 @@
   position: Founding Program Director
 
 - name: Jamila Haji
-  position: Lead Program Specialist
+  position: Program Supervisor
   year: 2012 Alumni
 
-- name: Kenneth Bales
-  position: Program Supervisor
+- name: Kevin Grossi
+  position: Lead Program Specialist/Lead Coding Instructor
+  year: 2012 Alumni
 
 # Second row
-- name: Kevin Grossi
-  position: Program Specialist/Lead Coding Instructor
-  year: 2012 Alumni
 
 - name: Brownie Sibrian
   position: Program Specialist
@@ -24,9 +22,6 @@
   position: Networking Instructor
   year: 2013 Alumni
 
-- name: Samantha Hsieh
-  position: Lean Start-up Instructor
-  year: 2014 Alumni
 
 # Third row
 - name: Kevin Tran
@@ -36,15 +31,7 @@
 - name: Maanav Ahluwalia
   position: App Development Instructor
   year: 2016 Alumni
-  
+
 - name: Leiloni Reynoso
   position: Business Development Instructor
   year: 2015 Alumni
-
-- name: Omzee Pitchford
-  position: Collaboration Instructor
-  year: 2015 Alumni
-
-# Fourth Row
-- name: Sai Maddali
-  position: Finance/Economics Instructor

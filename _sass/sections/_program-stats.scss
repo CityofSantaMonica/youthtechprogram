@@ -90,10 +90,13 @@ $controlWidth: 0; // For arrows, it was 7%
 }
 
 $chart-series: #1abc9c, #9b59b6, #4aa3df, #f39c12, #e74c3c, #bdc3c7, #34495e;
+$chart-ct-point: #1abc9c, #9b59b6, #ffd700, #ffd700, #e74c3c, #bdc3c7, #34495e;
+
 
 @for $i from 1 through length($chart-series) {
     $series: num-to-letter($i);
     $color: nth($chart-series, $i);
+    $colorPoint: nth($chart-ct-point, $i);
 
     .chart-legend {
         .ct-series-#{$series}:before {
@@ -108,8 +111,11 @@ $chart-series: #1abc9c, #9b59b6, #4aa3df, #f39c12, #e74c3c, #bdc3c7, #34495e;
 
     .ct-series-#{$series} .ct-bar,
     .ct-series-#{$series} .ct-line,
-    .ct-series-#{$series} .ct-point,
     .ct-series-#{$series} .ct-slice-donut {
         stroke: $color;
+    }
+
+    .ct-series-#{$series} .ct-point {
+        stroke: $colorPoint;
     }
 }
