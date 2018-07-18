@@ -36,31 +36,49 @@
       - 2014
       - 2015
       - 2016
+      - 2017
     series:
       -
-        - 84.62
+        - 83.33
         - 87.50
         - 80
         - 54.29
         - 44.8
+        - 50
       -
-        - 15.38
+        - 16.67
         - 12.50
         - 20
         - 45.71
         - 55.2
+        - 50
+      -
+        - null
+        - null
+        - null
+        - null
+        - 44.8
+        - null
+      -
+        - null
+        - null
+        - null
+        - null
+        - 55.2
+        - null
+
 
 - name: ethnicity
   type:
     primary: bar
     secondary: percent
-  title: 2016 Race/Ethnicity Stats
+  title: 2017 Race/Ethnicity Stats
   slug: Focusing on diversity
   content: >
     Bringing a diverse community together to learn technology.
 
     <ul class="chart-legend row">
-        <li class="col-xs-12 col-sm-6 ct-series-a">2016 Youth Tech Participants</li>
+        <li class="col-xs-12 col-sm-6 ct-series-a">2017 Youth Tech Participants</li>
         <li class="col-xs-12 col-sm-6 ct-series-b">
             Santa Monica Population Distribution <br/>
             <span style="display: block; font-size: 9px; margin-top: 0;">U.S. Census Bureau (2010)</span>
@@ -94,7 +112,7 @@
   type:
     primary: pie
     secondary: special
-  title: 2016 Neighborhood Participation
+  title: 2017 Neighborhood Participation
   slug: Working together as a community
   content: >
     Students from all neighborhoods work together to launch their Startups.
@@ -110,13 +128,13 @@
     </ul>
   data:
     series:
-      - 5  # Friends of Sunset Park
-      - 4  # North of Montana Association
-      - 1.1  # Northeast Neighbors Association
-      - 1.1  # Ocean Park Association
-      - 3  # Pico Neighborhood
+      - 3.6  # Friends of Sunset Park
+      - 2.2  # North of Montana Association
+      - 0    # Northeast Neighbors Association
+      - 0.8  # Ocean Park Association
+      - 4.4  # Pico Neighborhood
       - 1.1  # Santa Monica Mid-City Neighbors
-      - 0  # Wilshire/Montana Neighborhood
+      - 1.4  # Wilshire/Montana Neighborhood
 
 - name: interns
   type:
@@ -133,6 +151,7 @@
       - 2014
       - 2015
       - 2016
+      - 2017
     series:
       -
         - 100
@@ -140,7 +159,9 @@
         - 100
         - 100
         - 100
+        - 100
       -
+        - 100
         - 100
         - 100
         - 100
@@ -154,7 +175,7 @@
   title: Program growth
   slug: Look how far we’ve come
   content: >
-    We have increased the number of participants from 13 in 2012 to 35 in 2016.
+    We have increased the number of participants from 12 in 2012 to 30 in 2017.
 
     <ul class="chart-legend row">
         <li class="col-xs-12 col-sm-6 ct-series-a">Male Participation</li>
@@ -167,16 +188,19 @@
       - 2014
       - 2015
       - 2016
+      - 2017
     series:
       - # Male
-        - 11
+        - 10
         - 7
         - 20
         - 19
-        - 17
+        - 13
+        - 15
       - # Female
         - 2
         - 1
         - 5
         - 16
-        - 18
+        - 16
+        - 15
